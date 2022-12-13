@@ -1,15 +1,15 @@
 <header class="c-header">
   <a href="<%= BASE_URL %>index.html"><img src="/assets/img/logo.png" alt="Logo"></a>
-  <nav class="c-gnav">
-    <ul>
+  <nav class="c-header__nav">
+    <ul class="c-header__menu">
       <% if (typeof linklists != 'undefined') { %>
         <% linklists.main && linklists.main.forEach(link => { %>
-          <li>
+          <li class="c-header__item">
             <a <% if (link.current || link.active) { %>class="is-active"<% } %> href="<%= link.url %>"><%= link.title %></a>
             <% if (link.links) { %>
-              <ul>
+              <ul class="c-header__submenu">
                 <% link.links.forEach(child_link => { %>
-                  <li>
+                  <li class="c-header__subitem">
                     <a <% if (child_link.current) { %>class="is-active"<% } %> href="<%= child_link.url %>"><%= child_link.title %></a>
                   </li>
                 <% }) %>

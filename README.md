@@ -197,4 +197,5 @@ This command will boot up local static web server that serves the files from `di
 Example:
 ```
 VITE_BASE_URL=/
+https://github.com/allgrow-labo/frontend_labo_workflow_manual/blob/master/docs/training/2.%20minimum_standard/chapter_04-vn.md
 ```
