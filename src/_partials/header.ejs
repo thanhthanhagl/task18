@@ -1,11 +1,14 @@
 <header class="c-header">
-  <a href="<%= BASE_URL %>index.html"><img src="/assets/img/logo.png" alt="Logo"></a>
+  <div class="c-header__left">
+    <a  class="c-header__logo" href="<%= BASE_URL %>index.html"><img src="/assets/img/logo.png" alt="WIST"></a>
+  <p class="c-header__slogan">総合建設コンサルタント</p>
+  </div>
   <nav class="c-header__nav">
     <ul class="c-header__menu">
       <% if (typeof linklists != 'undefined') { %>
         <% linklists.main && linklists.main.forEach(link => { %>
-          <li class="c-header__item">
-            <a <% if (link.current || link.active) { %>class="is-active"<% } %> href="<%= link.url %>"><%= link.title %></a>
+          <li class="c-header__link">
+            <a class="c-header__item" <% if (link.current || link.active) { %>class="is-active"<% } %> href="<%= link.url %>"><%= link.title %></a>
             <% if (link.links) { %>
               <ul class="c-header__submenu">
                 <% link.links.forEach(child_link => { %>
