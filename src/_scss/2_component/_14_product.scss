@@ -1,0 +1,102 @@
+.c-product {
+    padding: 50px 0;
+
+    .c-product__desc {
+        text-align: center;
+        font-family: $main-font;
+        font-weight: 300;
+        font-size: 1.4rem;
+        letter-spacing: 1.2px;
+        color: $black;
+        line-height: 2;
+        margin-top: 12px;
+        font-feature-settings: "palt" 1;
+    }
+
+    .c-product__list {
+        display: flex;
+        justify-content: space-between;
+        max-width: 1170px;
+        width: 100%;
+        margin: 37px auto 0;
+    }
+
+    .c-product__item {
+        display: block;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 450px;
+        max-width: 270px;
+        width: 100%;
+        position: relative;
+
+        &:hover {
+            opacity: 1;
+
+            &::after {
+                display: none;
+            }
+
+            &::before {
+                display: none;
+            }
+        }
+
+        &::after {
+            content: "";
+            border-bottom: 450px solid rgba(255, 255, 255, 0.7);
+            border-right: 270px solid transparent;
+            z-index: 1;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+
+        &::before {
+            content: "";
+            border-top: 212px solid rgba(255, 255, 255, 0.7);
+            border-left: 128px solid transparent;
+            z-index: 1;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+
+        &:nth-child(2n) {
+            &::after {
+                border-right: unset;
+                left: unset;
+                right: 0;
+                border-left: 270px solid transparent;                            
+            }
+
+            &::before {
+                border-left: unset;
+                right: unset;
+                left: 0;
+                border-right: 128px solid transparent;                
+            }
+        }
+    }
+      
+
+    .c-product__label {
+        position: relative;
+        top: 70%;
+        margin: 0 15px;
+        text-align: center;
+        padding: 20px;
+        z-index: 2;
+    }
+
+    .c-product__name {
+        font-family: $main-font;
+        font-size: 1.8rem;
+        letter-spacing: 3.1px;
+        font-weight: 600;
+        color: $white;
+        font-feature-settings: "palt" 1;
+        margin-top: 19px;
+        line-height: 1;
+    }
+}

@@ -1,0 +1,13 @@
+.c-plane {
+    padding: 50px 0 0;
+    background-image: url("./assets/img/forest.jpg");
+    background-size: cover;
+    height: 462px;
+
+    .c-plane__main {
+        max-width: 970px;
+        width: 100%;
+        display: flex;
+        margin: 0 auto;
+    }
+}

@@ -4,16 +4,14 @@
     max-width: $base-width;
     margin: 0 auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     position: relative;
     background: rgba(255, 255, 255, 0.9);
 
     .c-header__left {
         display: flex;
-        left: 29.5%;
         position: relative;
-        transform: translateX(-50%);
-        padding: 15px 0;
+        padding: 16px 0 13px;
     }
 
     .c-header__logo {
@@ -26,12 +24,12 @@
         font-size: 1.8rem;
         font-weight: 600;
         color: $black;
-        padding: 12px 16px;
+        padding: 11px 15px;
         letter-spacing: -0.5px;
     }
 
     .c-header__nav {
-        width: 48%;
+        width: 59.8%;
     }
 
     .c-header__menu {
@@ -47,8 +45,13 @@
             background-color: $blue;
 
             & >.c-header__item {
+                letter-spacing: 1.4px;
                 color: $white;
-                padding: 25px 17px;
+                padding: 26px 17px 25px;
+
+                &:hover {
+                    background-image: unset;
+                }
             } 
         }
 
@@ -56,8 +59,13 @@
             background-color: $green;
 
             &>.c-header__item {
+                letter-spacing: 1.4px;
                 color: $white;
-                padding: 25px 34px;
+                padding: 26px 35px 25px;
+
+                &:hover {
+                    background-image: unset;
+                }
             }
         }
     }
@@ -65,17 +73,18 @@
     .c-header__item {
         color: black;
         font-size: 1.6rem;
-        letter-spacing: 0.1em;
+        letter-spacing: 1.9px;
         font-family: $main-font;
         line-height: 1.8;
         display: block;
-        padding: 25px 18px;
+        padding: 26px 18px 25px;
 
         &:hover {
             background-image: url("./assets/img/logomark.svg");
             background-position: center;
             background-size: 64px;
             background-repeat: no-repeat;
+            transition: 0s;
         }
     }
 
@@ -84,12 +93,13 @@
         display: none;
         width: 280px;
         top: 100%;
-        left: 50%;
+        left: 52%;
         transform: translateX(-50%);
         background-color: #000;
         opacity: 0.8;
         box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.53);
         padding: 0 15px 6px;
+        z-index: 1;
 
         &:hover {
             display: inline-block;

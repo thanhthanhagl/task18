@@ -60,5 +60,37 @@
         "url": "#"
       }
     ]
+  },
+  "product":{
+    "list":[
+      {
+        "class":"c-item1",
+        "icon":"./assets/img/tsunami.svg",
+        "name":"防災・減災業務",
+        "bg":"u-red",
+        "iconclass":"c-tsunami"
+      },
+      {
+        "class":"c-item2",
+        "icon":"./assets/img/drone.svg",
+        "name":"ICT・BIM/CIM",
+        "bg":"u-blue",
+        "iconclass":"c-drone"
+      },
+      {
+        "class":"c-item3",
+        "icon":"./assets/img/camera.svg",
+        "name":"測量・設計業務",
+        "bg":"u-yellowdark",
+        "iconclass":"c-camera"
+      },
+      {
+        "class":"c-item4",
+        "icon":"./assets/img/drill.svg",
+        "name":"調査業務",
+        "bg":"u-green",
+        "iconclass":"c-drill"
+      }
+    ]
   }
 }

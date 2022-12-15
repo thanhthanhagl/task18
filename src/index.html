@@ -1,66 +1,86 @@
 <%- include('_layouts/layout', { title: 'Home page' }); -%>
 
-<!-- @meta -->
-<meta name="description" content="Home page">
-<!-- @@meta -->
+  <!-- @meta -->
+  <meta name="description" content="Home page">
+  <!-- @@meta -->
 
-<!-- @content -->
-<main class="p-top">
-  <section class="c-mainvisual">
-    <div class="c-mainvisual__wrapimg">
-      <div class="c-mainvisual__inner">
-        <h1 class="c-mainvisual__title">
-          <span class="c-mainvisual__protect">Protect<br></span>
-          <span class="c-mainvisual__the">the</span>
-          <span class="c-mainvisual__future">future</span>
-        </h1>
-        <p class="c-mainvisual__subtitle">防災技術を駆使し、地域の未来を守る。</p>
+  <!-- @content -->
+  <main class="p-top">
+    <section class="c-mainvisual">
+      <div class="c-mainvisual__slider">
+        <div class="c-mainvisual__wrapimg">
+          <div class="c-mainvisual__innermain  c-mainvisual__bglogo">
+            <h1 class="c-mainvisual__title c-mainvisual__pagetitle">
+              <span class="c-mainvisual__protect">Protect<br></span>
+              <span class="c-mainvisual__the">the</span>
+              <span class="c-mainvisual__future">future</span>
+            </h1>
+            <p class="c-mainvisual__subtitle c-mainvisual__main">防災技術を駆使し、地域の未来を守る。</p>
+          </div>
+        </div>
+        <div class="c-mainvisual__wrapimg">
+          <div class="c-mainvisual__inner">
+            <h2 class="c-mainvisual__title">Protect</h2>
+            <p class="c-mainvisual__subtitle">生命と財産を守る</p>
+          </div>
+        </div>
+        <div class="c-mainvisual__wrapimg">
+          <div class="c-mainvisual__inner">
+            <h2 class="c-mainvisual__title">Connect</h2>
+            <p class="c-mainvisual__subtitle">地域と人を繋ぐ</p>
+          </div>
+        </div>
+        <div class="c-mainvisual__wrapimg">
+          <div class="c-mainvisual__inner">
+            <h2 class="c-mainvisual__title">Technology</h2>
+            <p class="c-mainvisual__subtitle">最新技術を生かす</p>
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="c-mainvisual__wrapimg">
-      <div class="c-mainvisual__inner">
-        <h2 class="c-mainvisual__title">Protect</h2>
-        <p class="c-mainvisual__subtitle">生命と財産を守る</p>
+      <div class="c-mainvisual__btn"><i class="c-mainvisual__dot"></i></div>
+      <div class="c-mainvisual__label">
+        <div class="c-mainvisual__left">
+          <div class="c-mainvisual__pag">
+            <i class="c-mainvisual__prev">></i>
+            <i class="c-mainvisual__next">></i>
+          </div>
+          <p class="c-mainvisual__date">2018年11月22日</p>
+        </div>
+        <div class="c-mainvisual__center">先進建設・防災・減災技術フェアin熊本にドローン等について出展しました。</div>
+        <div class="c-mainvisual__right">お知らせ一覧 ></div>
       </div>
-    </div>
-    <div class="c-mainvisual__wrapimg">
-      <div class="c-mainvisual__inner">
-        <h2 class="c-mainvisual__title">Connect</h2>
-        <p class="c-mainvisual__subtitle">地域と人を繋ぐ</p>
+    </section>
+    <section class="c-product">
+      <div class="c-top">
+        <img src="./assets/img/icon.svg" alt="事業紹介" class="c-icon">
+        <h2 class="c-title">事業紹介</h2>
+        <p class="c-product__desc"><span class="u-mgl05">アイエステーは、たゆまない技術向上により、地域防災事業に携わるとともに</span><br>
+          地域の安全・安心を確保できるインフラ整備に貢献します。</p>
       </div>
-    </div>
-    <div class="c-mainvisual__wrapimg">
-      <div class="c-mainvisual__inner">
-        <h2 class="c-mainvisual__title">Technology</h2>
-        <p class="c-mainvisual__subtitle">最新技術を生かす</p>
+      <div class="c-product__list">
+        <% if (typeof product != 'undefined') { %>
+          <% product.list && product.list.forEach(item => { %>
+            <a href="#" class="c-product__item <%= item.class %>">
+                <div class="c-product__label <%= item.bg %>">
+                  <img class="c-product__icon <%= item.iconclass %>" src="<%= item.icon %>" alt="<%= item.name %>">
+                  <h3 class="c-product__name"><%= item.name %></h3>
+                </div>
+              </a>
+          <% }) %>
+        <% } %>
       </div>
-    </div>
-  </section>
-  <section class="p-top1">
-    <div class="l-container">
-      <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis
-        dolorem eaque minima deleniti dicta doloremque ut, officiis odit tempora
-        culpa mollitia ipsa quas quibusdam. Voluptate illo nam delectus
-        reprehenderit laborum?
-        <br>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis
-        dolorem eaque minima deleniti dicta doloremque ut, officiis odit tempora
-        culpa mollitia ipsa quas quibusdam. Voluptate illo nam delectus
-        reprehenderit laborum?
-        <br>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis
-        dolorem eaque minima deleniti dicta doloremque ut, officiis odit tempora
-        culpa mollitia ipsa quas quibusdam. Voluptate illo nam delectus
-        reprehenderit laborum?
-      </p>
-    </div>
-  </section>
-</main>
-<!-- @@content -->
-
-<!-- @script -->
-<script>
-  console.log("home page");
-</script>
-<!-- @@script -->
+    </section>
+    <section class="c-plane">
+      <div class="c-plane__main">
+        <img class="c-plane__img" src="./assets/img/matricepro.png" alt="レーザースキャナ搭載のドローン*で安全かつ効率的に測量が可能。">
+        <i class="c-plane__line"></i>
+        <div class="c-plane__text">
+          <h2 class="c-plan__title">レーザースキャナ搭載のドローン<span class="c-plane__star">*</span><br>
+            で安全かつ効率的に測量が可能。</h2>
+          <p class="c-plan__desc">アイエステーでは、ドローン搭載型の測量用レーザースキャナ搭載のドローンを導入しました。これにより、従来の写真測量で必須だった対空標識を置くことなく、安全かつ効率的に測量することが可能となりました。またレーザーは植生下にも届くため、写真測量では不可能だった植生下のグランドデータを取得できます。災害時の地形測量や施工管理における活躍が期待できます。</p>
+          <p class="c-plane__note"><span class="c-plane__smallstar">＊</span>アミューズワンセルフ社製：ドローン搭載用レーザースキャナシステム「TDOT（ティードット）」</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- @@content -->

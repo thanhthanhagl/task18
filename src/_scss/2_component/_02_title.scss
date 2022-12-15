@@ -5,6 +5,12 @@ title
 
 /*
 ------------------------------------------------------------*/
-.c-title1 {
-	
+.c-title {
+    font-family: $main-font;
+    font-weight: 600;
+    font-size: 2.4rem;
+    letter-spacing: 2.4px;
+    color: $black;
+    text-align: center;
+    line-height: 1.8;
 }
