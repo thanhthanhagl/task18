@@ -2,8 +2,87 @@
 footer
 ------------------------------------------------------------*/
 .c-footer {
-    padding: 20px;
-    background: #051a2b;
-    color: #fff;
-    text-align: center;
+    margin: -7.1% auto 0;
+    z-index: 1;
+
+    .c-footer__main {
+        display: flex;
+        position: relative;
+    }
+
+    .c-footer__left {
+        max-width: 670px;
+        width: 100%;
+        border-bottom: 525px solid $green;
+        border-right: 670px solid transparent;
+        display: block;
+    }
+    
+    .c-footer__inner {
+        position: absolute;
+        left: 4.1%;
+        bottom: 7%;
+        z-index: 2;
+    } 
+
+    .c-footer__title {
+        text-align: center;
+        font-family: "Lora",sans-serif;
+        font-weight: 400;
+        letter-spacing: 0;
+        color: $white;
+    }
+
+    .c-footer__protect {        
+        font-size: 5rem;
+        line-height: 0.9;
+    }
+
+    .c-footer__the {
+        font-size: 2rem;
+        line-height: 2.3;
+        margin-left: -3px;
+    }
+
+    .c-footer__future {
+        font-size: 5rem;
+        line-height: 0.7;
+        margin-left: -6px;
+    }
+
+    .c-footer__slogan {
+        font-family: $main-font;
+        font-size: 1.4rem;
+        letter-spacing: 3px;
+        font-weight: 300;
+        text-align: center;
+        line-height: 1.9;
+        color: $white;
+        font-feature-settings: "palt" 1;
+        margin-left: 2px;
+        transform: translateY(-7px);
+    }
+
+    .c-footer__center {  
+        max-width: 580px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .c-footer__right {
+        max-width: 670px;
+        width: 100%;
+        border-bottom: 525px solid $blue;
+        border-left: 670px solid transparent;
+        display: block;
+    }
+
+    .c-footer__info {
+        margin: 33.5% auto 5%;
+    }
+
+    .c-footer__logo {
+        max-width: 145px;
+        width: 100%;
+    }
 }

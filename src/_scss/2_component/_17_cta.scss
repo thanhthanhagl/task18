@@ -1,0 +1,73 @@
+.c-cta {
+    background-color: rgb(245, 245, 245);
+    padding: 50px 0 0;
+
+    .c-cta__main {
+        height: 325px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .c-cta__left {
+        background-image: url("./assets/img/left.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        max-width: 49.9%;
+        width: 100%;
+        position: relative;
+        display: block;
+    }
+
+    .c-cta__right {
+        display: block;
+        background-image: url("./assets/img/right.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        max-width: 50%;
+        width: 100%;
+        position: relative;
+    }
+
+    .c-cta__inner {
+        position: absolute;
+        top: 29.5%;
+        left: 20%;
+    }
+
+    .c-cta__title {
+        font-family: $main-font;
+        font-weight: 600;
+        font-size: 3rem;
+        letter-spacing: 3.5px;
+        line-height: 1.2;
+        color: $white;
+    }
+
+    .c-cta__desc {
+        font-family: $main-font;
+        font-size: 1.5rem;
+        letter-spacing: 1.8px;
+        line-height: 2;
+        color: $white;
+        position: relative;
+        padding-bottom: 29px;
+        margin-top: 13px;
+        font-feature-settings: "palt" 1;
+
+        &::after {
+            display: block;
+            content: ">";
+            font-family: $main-font;
+            font-weight: 600;
+            font-size: 1.8rem;
+            letter-spacing: 1.4px;
+            line-height: 1.7;
+            color: $white;
+            position: absolute;
+            bottom: 0;
+            left: 1px;
+        }
+    }
+}

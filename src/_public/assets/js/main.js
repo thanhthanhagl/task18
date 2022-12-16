@@ -14,7 +14,7 @@ $(document).ready(function () {
   $('.c-mainvisual__slider').slick({
     infinite: true,
     fade: true,
-    autoplay: true,
+    autoplay: false,
     autoplayspeed: 3000,
     speed: 2000,
     arrows: false,

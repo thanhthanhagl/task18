@@ -1,0 +1,122 @@
+.c-blog {
+    .c-blog__bg {
+        background-image: url("./assets/img/bgpd.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 533px;
+    }
+
+    .c-blog__top {
+        padding: 50px 0 0;
+    }
+
+    .c-blog__desc {
+        text-align: center;
+        font-family: $main-font;
+        font-weight: 300;
+        font-size: 1.4rem;
+        letter-spacing: 1.2px;
+        line-height: 2;
+        color: $black;
+        font-feature-settings: "palt" 1;
+        margin-top: 11px;
+    }
+
+    .c-blog__list {
+        margin: 37px auto;
+        max-width: 1170px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .c-blog__item {
+        display: block;
+        max-width: 270px;
+        width: 100%;
+
+        &:nth-child(even) {
+            margin: 15px 0;
+        }  
+    }
+
+    .c-blog__wrap {
+        background-color: rgb(255, 255, 255);
+        box-shadow: 0 2px 7px 0 rgba(0, 0, 0, 0.3);
+    }
+
+    .c-blog__thumb {
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 170px;
+        background-color: rgb(204, 204, 204);
+        position: relative;
+    }
+
+    .c-blog__label {
+        max-width: fit-content;
+        width: 100%;
+        font-family: $main-font;
+        color: $white;
+        font-size: 1.2rem;
+        font-weight: 300;
+        letter-spacing: 1px;
+        text-align: center;
+        font-feature-settings: "palt" 1;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: 1;
+    }
+
+    .c-blog__labelblue {
+        padding: 4px;
+    }
+
+    .c-blog__labelred {
+        padding: 4px 5px 4px 7px;
+    }
+
+    .c-blog__info {
+        background-color: rgb(255, 255, 255);
+        box-shadow: 0 2px 7px 0 rgba(0, 0, 0, 0.3);
+        padding: 11px 10px 14px 14px;
+        height: 95px;
+        position: relative;
+
+        &::after {
+            content: ">";
+            font-family: $main-font;
+            font-size: 1.5rem;
+            line-height: 2;
+            letter-spacing: 1.5px;
+            color: $black;
+            position: absolute;
+            bottom: 5px;
+            right: 9px;
+        }
+    }
+
+    .c-blog__post {
+        font-family: $main-font;
+        font-weight: 600;
+        font-size: 1.5rem;
+        letter-spacing: 1.5px;
+        color: $black;
+        font-feature-settings: "palt" 1;
+    }
+
+    .c-blog__seemore {
+        text-align: center;
+        padding: 25px 0;
+    }
+
+    .c-blog__link {
+        font-size: 1.8rem;
+        font-family: $main-font;
+        letter-spacing: 1.4px;
+        color: #000;
+        font-weight: 600;
+    }
+}

@@ -29,6 +29,8 @@
         max-width: 270px;
         width: 100%;
         position: relative;
+        background-color: rgb(255, 255, 255);
+        box-shadow: 0 2px 7px 0 rgba(0, 0, 0, 0.3);
 
         &:hover {
             opacity: 1;
@@ -67,22 +69,22 @@
                 border-right: unset;
                 left: unset;
                 right: 0;
-                border-left: 270px solid transparent;                            
+                border-left: 270px solid transparent;
             }
 
             &::before {
                 border-left: unset;
                 right: unset;
                 left: 0;
-                border-right: 128px solid transparent;                
+                border-right: 128px solid transparent;
             }
         }
     }
-      
+
 
     .c-product__label {
         position: relative;
-        top: 70%;
+        top: 70.2%;
         margin: 0 15px;
         text-align: center;
         padding: 20px;
@@ -96,7 +98,7 @@
         font-weight: 600;
         color: $white;
         font-feature-settings: "palt" 1;
-        margin-top: 19px;
+        margin-top: 18px;
         line-height: 1;
     }
 }

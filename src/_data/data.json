@@ -92,5 +92,57 @@
         "iconclass":"c-drill"
       }
     ]
-  }
+  },
+  "blog":[
+    {
+      "class":"c-blog1",
+      "label":"ICT・BIM/CIM",
+      "color":"u-blue c-blog__labelblue",
+      "title":"No title",
+      "link":"#"
+    },
+    {
+      "class":"c-blog2",
+      "label":"防災・減災業務",
+      "color":"u-red c-blog__labelred",
+      "title":"十籠地すべり対策事業",
+      "link":"#"
+    },
+    {
+      "class":"c-blog3",
+      "label":"防災・減災業務",
+      "color":"u-red c-blog__labelred",
+      "title":"水ヶ浦地区災害関連緊急地すべり対策事業",
+      "link":"#"
+    },
+    {
+      "class":"c-blog4",
+      "label":"防災・減災業務",
+      "color":"u-red c-blog__labelred",
+      "title":"大切畑地区災害関連緊急地すべり対策事業",
+      "link":"#"
+    }
+  ],
+  "qna":[
+    {
+      "dt":"2018年11月22日",
+      "dd":"先進建設・防災・減災技術フェアin熊本にドローン等について出展しました。"
+    },
+    {
+      "dt":"2018年11月20日",
+      "dd":"ホームページをリニューアルしました"
+    },
+    {
+      "dt":"2018年07月04日",
+      "dd":"綿田地区の復興を願って寄付をしました。"
+    },
+    {
+      "dt":"2017年10月12日",
+      "dd":"福岡支店が移転しました。"
+    },
+    {
+      "dt":"2017年09月01日",
+      "dd":"ドローンレーザスキャナを導入しました"
+    }
+  ]
 }
