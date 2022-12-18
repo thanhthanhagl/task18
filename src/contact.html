@@ -1,0 +1,103 @@
+<%- include('_layouts/layout', {
+    title: 'About page'
+}); -%>
+
+<!-- @content -->
+    <main class="p-about">
+        <section class="c-pagetop">
+            <div class="c-pagetop__inner">
+                <h1 class="c-pagetop__title">お問い合わせ</h1>
+            </div>
+        </section>
+        <section class="c-form">
+            <div class="c-form__container">
+                <div class="c-form__top">
+                    <img class="c-icon" src="./assets/img/icon.svg" alt="お問い合わせフォーム">
+                    <h2 class="c-title">お問い合わせフォーム</h2>
+                    <p class="c-form__desc"> 株式会社アイエステーへのお問い合わせ専用フォームです。弊社へのご質問・ご相談などありましたらどうぞお気軽にご連絡ください。後日メールまたはお電話にて返信いたします。</p>
+                </div>
+                <div class="c-form__main">
+                    <form class="c-form__content" action="#" method="post">
+                        <table class="c-form__form">
+                            <tbody class="c-tbody">
+                                <tr class="c-form__tr">
+                                    <th class="c-form__th">
+                                        <label for="company" class="c-form__label">
+                                            <span class="c-form__block">任意</span>法人名
+                                        </label>
+                                    </th>
+                                    <td class="c-form__td">
+                                        <input type="text" id="company" name="company" class="c-form__input" placeholder="株式会社アイエステー">
+                                    </td>
+                                </tr>
+                                <tr class="c-form__tr">
+                                    <th class="c-form__th">
+                                        <label for="name" class="c-form__label">
+                                            <span class="c-form__block u-green">必須</span>お名前</label>
+                                    </th>
+                                    <td class="c-form__td">
+                                        <input type="text" id="name" name="name" class="c-form__input" placeholder="熊本 太郎" required="">
+                                        <label class="c-form__error">この項目は必須です。</label>
+                                    </td>
+                                </tr>
+                                <tr class="c-form__tr">
+                                    <th class="c-form__th">
+                                        <label for="email" class="c-form__label">
+                                            <span class="c-form__block u-green">必須</span>メールアドレス</label>
+                                    </th>
+                                    <td class="c-form__td">
+                                        <input type="email" id="email" name="email" class="c-form__input" placeholder="example@gmail.com" required="">
+                                        <label class="c-form__error">この項目は必須です。</label>
+                                    </td>
+                                </tr>
+                                <tr class="c-form__tr">
+                                    <th class="c-form__th">
+                                        <label for="phone" class="c-form__label">
+                                            <span class="c-form__block u-green">必須</span>電話番号</label>
+                                    </th>
+                                    <td class="c-form__td">
+                                        <input type="text" id="phone" name="phone" class="c-form__input" pattern="[0-9]{1}[0-9]{9}" placeholder="00-0000-0000" required="">
+                                        <label class="c-form__error">この項目は必須です。</label>
+                                    </td>
+                                </tr>
+                                <tr class="c-form__tr">
+                                    <th class="c-form__th">
+                                        <label for="postoffice" class="c-form__label">
+                                            <span class="c-form__block">任意</span>ご住所</label>
+                                    </th>
+                                    <td class="c-form__td">
+                                        <div class="c-form__list">
+                                            <div class="c-form__rowtop">
+                                              <p>〒</p>
+                                              <input type="text" id="postoffice" name="postoffice" class="c-form__input c-form__postinput" placeholder="00-0000">
+                                              <select name="prefecture" class="c-form__input c-form__dropdown">
+                                                <option value="1"> --都道府県-- </option>
+                                                <option value="2"> --都道府県 1-- </option>
+                                                <option value="1"> --都道府県 2-- </option>
+                                                <option value="1"> --都道府県 3-- </option>
+                                              </select>
+                                            </div>
+                                            <input type="text" name="building" class="c-form__input c-form__listinput" placeholder="ビル・マンションなど">
+                                            <input type="text" name="address" class="c-form__input c-form__listinput" placeholder="市町村区番地">
+                                          </div>
+                                    </td>
+                                </tr>
+                                <tr class="c-form__tr">
+                                    <th class="c-form__th">
+                                        <label for="note" class="c-form__label">
+                                            <span class="c-form__block u-green">必須</span>お問い合わせ<br>内容</label>
+                                    </th>
+                                    <td class="c-form__td">
+                                        <textarea id="note" name="note" class="c-form__input c-form__textarea" cols="30" rows="10" placeholder="お問い合わせ内容をご入力ください。" required=""></textarea>
+                                        <label class="c-form__error">この項目は必須です。</label>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </form>
+                    <div class="c-form__bottom"><button class="c-form__btn" type="submit">確認する ></button></div>                
+                </div>
+            </div>
+        </section>
+    </main>
+<!-- @@content -->

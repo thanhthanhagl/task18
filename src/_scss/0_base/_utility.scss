@@ -6,7 +6,12 @@
 //	margin-top: -100px;
 //	padding-top: 100px;
 //}
-
+.u-notpc {
+    display: none;
+    @include tab {
+        display: block;
+    }
+}
 //------------------------------------------------------------
 // margin
 //------------------------------------------------------------
@@ -29,9 +34,15 @@
 }
 
 .u-green {
-    background-color: $green;
+    background-color: $green !important;
 }
 
 .u-star {
     color: #f90;        
+}
+//--------------------------------------------------
+//text
+//--------------------------------------------------
+.u-bold {
+    font-weight: 600;
 }

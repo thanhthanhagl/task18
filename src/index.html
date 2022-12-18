@@ -52,26 +52,30 @@
       </div>
       </div>
     </section>
-    <section class="c-product l-container l-container--width1200">
-      <div class="c-top">
-        <img src="./assets/img/icon.svg" alt="事業紹介" class="c-icon">
-        <h2 class="c-title">事業紹介</h2>
-        <p class="c-product__desc"><span class="u-mgl05">アイエステーは、たゆまない技術向上により、地域防災事業に携わるとともに</span><br>
-          地域の安全・安心を確保できるインフラ整備に貢献します。</p>
-      </div>
-      <div class="c-product__list">
-        <% if (typeof product !='undefined' ) { %>
-          <% product.list && product.list.forEach(item=> { %>
-            <a href="#" class="c-product__item <%= item.class %>">
-              <div class="c-product__label <%= item.bg %>">
-                <img class="c-product__icon <%= item.iconclass %>" src="<%= item.icon %>" alt="<%= item.name %>">
-                <h3 class="c-product__name">
-                  <%= item.name %>
-                </h3>
-              </div>
-            </a>
-            <% }) %>
-              <% } %>
+    <section class="c-product">
+      <div class="l-container l-container--width1200">
+        <div class="c-top">
+          <img src="./assets/img/icon.svg" alt="事業紹介" class="c-icon">
+          <h2 class="c-title">事業紹介</h2>
+          <p class="c-product__desc"><span class="u-mgl05">アイエステーは、たゆまない技術向上により、地域防災事業に携わるとともに</span><br>
+            地域の安全・安心を確保できるインフラ整備に貢献します。</p>
+        </div>
+        <div class="c-product__list">
+          <% if (typeof product !='undefined' ) { %>
+            <% product.list && product.list.forEach(item=> { %>
+              <a href="#" class="c-product__item <%= item.class %>">
+                <div class="c-product__label <%= item.bg %>">
+                  <div class="c-product__icon">
+                    <img class="<%= item.iconclass %>" src="<%= item.icon %>" alt="<%= item.name %>">
+                  </div>
+                  <h3 class="c-product__name">
+                    <%= item.name %>
+                  </h3>
+                </div>
+              </a>
+              <% }) %>
+                <% } %>
+        </div>
       </div>
     </section>
     <section class="c-plane">
@@ -107,7 +111,7 @@
             <p class="c-blog__desc">『地域の人たちが安全に安心して暮らせるように、<br>
               そして豊かに快適に暮らせるように』、そんな想いを込めて仕事をしています。</p>
           </div>
-          <div class="c-blog__list">
+          <div class="c-blog__list">            
             <% if (typeof blog !='un=defined' ) { blog && blog.forEach(blog=> { %>
               <a class="c-blog__item" href="<%= blog.link %>">
                 <div class="c-blog__wrap">
@@ -173,6 +177,6 @@
       <div class="c-qna__seemore">
         <a class="c-qna__link" href="#">お知らせ一覧 ></a>
       </div>
-    </section>
+    </section>    
   </main>
   <!-- @@content -->

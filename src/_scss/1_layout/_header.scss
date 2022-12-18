@@ -1,40 +1,56 @@
 /* Header
 ------------------------------------------------------------*/
 .c-header {
-    margin: 0 auto;
-    display: flex;
-    justify-content: flex-end;
-    position: relative;
+    position: fixed;
+    z-index: 2;
+    transition: height 200ms ease-in-out;
+    position: fixed;
+    top: 0;
+    left: 0;
     background: rgba(255, 255, 255, 0.9);
 
-    .c-header__left {
-        display: flex;
-        position: relative;
-        padding: 16px 0 13px;
-    }
-
-    .c-header__logo {
-        max-width: 189px;
+    .c-header__main {
+        margin-left: auto;
+        padding-left: 15px;
+        max-width: 1575px;
         width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        height: 80px;
+
+        &.is-scroll {
+            height: 60px;
+        }
     }
 
-    .c-header__slogan {
-        font-family: $main-font;
-        font-size: 1.8rem;
-        font-weight: 600;
-        color: $black;
-        padding: 11px 15px;
-        letter-spacing: -0.5px;
+    &.is-scroll {
+        background-color: rgba(255, 255, 255, 0.8);
+        box-shadow: 0 2px 7px 0 rgb(0 0 0 / 30%);
+
+        .c-header__logoimg {
+            height: 30px;
+        }    
+    }
+
+    .c-header__logoimg {
+        height: 47px;
+        transition: height 0.3s ease-in-out;
+        @include laptop {
+            height: 40px;
+        }
     }
 
     .c-header__nav {
-        width: 59.8%;
+        height: 100%;
     }
 
     .c-header__menu {
         display: flex;
         width: 100%;
-        justify-content: flex-end;        
+        height: 100%;
+        justify-content: flex-end;
     }
 
     .c-header__link {
@@ -43,15 +59,16 @@
         &:nth-child(6) {
             background-color: $blue;
 
-            & >.c-header__item {
+            &>.c-header__item {
                 letter-spacing: 1.4px;
                 color: $white;
-                padding: 26px 17px 25px;
+                padding: 0;
+                width: 139px;
 
                 &:hover {
                     background-image: unset;
                 }
-            } 
+            }
         }
 
         &:nth-child(5) {
@@ -60,7 +77,8 @@
             &>.c-header__item {
                 letter-spacing: 1.4px;
                 color: $white;
-                padding: 26px 35px 25px;
+                padding: 0;
+                width: 139px;
 
                 &:hover {
                     background-image: unset;
@@ -75,8 +93,15 @@
         letter-spacing: 1.9px;
         font-family: $main-font;
         line-height: 1.8;
-        display: block;
-        padding: 26px 18px 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        padding: 0 18px;
+        position: relative;
+        @include laptop {
+            padding: 0 10px;
+        }
 
         &:hover {
             background-image: url("./assets/img/logomark.svg");
@@ -134,8 +159,8 @@
             right: 0;
         }
     }
-      
+
 }
+
 /* Main menu
 ------------------------------------------------------------*/
-

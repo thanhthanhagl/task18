@@ -1,0 +1,44 @@
+/*------------------------------------------------------------
+Css of home page
+------------------------------------------------------------*/
+.p-about {
+    margin-top: 80px;
+}
+
+.c-pagetop {
+    background-image: url("./assets/img/contactpage.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 150px;
+    position: relative;
+
+    .c-pagetop__inner {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 14px;
+        text-align: center;
+    }
+
+    .c-pagetop__title {
+        color: $white;
+        font-size: 3rem;
+        letter-spacing: 1.4px;
+        font-weight: 600;
+        line-height: 1;
+        font-family: $main-font;
+    }
+
+    .c-form__desc {
+        margin-top: 6px;
+        font-size: 1.4rem;
+        letter-spacing: 1.4px;
+        line-height: 1.7;
+        font-feature-settings: "palt" 1;
+        color: $black;
+        font-family: $main-font;
+        font-weight: 300;
+    }
+}
+
+

@@ -1,26 +1,27 @@
-<header class="c-header">
-  <div class="c-header__left">
-    <a  class="c-header__logo" href="<%= BASE_URL %>index.html"><img src="/assets/img/logo.png" alt="WIST"></a>
-  <p class="c-header__slogan">総合建設コンサルタント</p>
+<header class="c-header l-container">
+  <div class="c-header__main">
+    <div class="c-header__logo">
+      <a  href="<%= BASE_URL %>index.html"><img class="c-header__logoimg" src="/assets/img/logo.png" alt="WIST"></a>
+    </div>
+    <nav class="c-header__nav">
+      <ul class="c-header__menu">
+        <% if (typeof linklists != 'undefined') { %>
+          <% linklists.main && linklists.main.forEach(link => { %>
+            <li class="c-header__link">
+              <a class="c-header__item<% if (link.current || link.active) { %> <%= is-active %> <% } %>" href="<%= link.url %>"><%= link.title %></a>
+              <% if (link.links) { %>
+                <ul class="c-header__submenu">
+                  <% link.links.forEach(child_link => { %>
+                    <li class="c-header__subitem">
+                      <a <% if (child_link.current) { %>class="is-active"<% } %> href="<%= child_link.url %>"><%= child_link.title %></a>
+                    </li>
+                  <% }) %>
+                </ul>
+              <% } %>
+            </li>
+          <% }) %>
+        <% } %>
+      </ul>
+    </nav>
   </div>
-  <nav class="c-header__nav">
-    <ul class="c-header__menu">
-      <% if (typeof linklists != 'undefined') { %>
-        <% linklists.main && linklists.main.forEach(link => { %>
-          <li class="c-header__link">
-            <a class="c-header__item" <% if (link.current || link.active) { %>class="is-active"<% } %> href="<%= link.url %>"><%= link.title %></a>
-            <% if (link.links) { %>
-              <ul class="c-header__submenu">
-                <% link.links.forEach(child_link => { %>
-                  <li class="c-header__subitem">
-                    <a <% if (child_link.current) { %>class="is-active"<% } %> href="<%= child_link.url %>"><%= child_link.title %></a>
-                  </li>
-                <% }) %>
-              </ul>
-            <% } %>
-          </li>
-        <% }) %>
-      <% } %>
-    </ul>
-  </nav>
 </header>

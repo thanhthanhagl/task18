@@ -16,9 +16,12 @@
     .c-product__list {
         display: flex;
         justify-content: space-between;
-        max-width: 1170px;
-        width: 100%;
+        padding: 0 15px;
+        flex-wrap: wrap;
         margin: 37px auto 0;
+        @include tab{
+            max-width: 600px;
+        }
     }
 
     .c-product__item {
@@ -26,11 +29,15 @@
         background-repeat: no-repeat;
         background-size: cover;
         height: 450px;
-        max-width: 270px;
-        width: 100%;
+        width: 20.5%;
+        padding: 0 15px;
         position: relative;
         background-color: rgb(255, 255, 255);
         box-shadow: 0 2px 7px 0 rgba(0, 0, 0, 0.3);
+        @include tab{
+            width: 43%;
+            margin-bottom: 30px;
+        }
 
         &:hover {
             opacity: 1;
@@ -87,7 +94,7 @@
         top: 70.2%;
         margin: 0 15px;
         text-align: center;
-        padding: 20px;
+        padding: 20px 10px;
         z-index: 2;
     }
 

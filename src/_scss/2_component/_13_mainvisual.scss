@@ -105,11 +105,15 @@
     .c-mainvisual__main {        
         transform: translateY(16px);
     }
-    .c-mainvisual__bottom{
+
+    .c-mainvisual__bottom {
         position: absolute;
         bottom: 4.4%;
         left: 50%;
         transform: translateX(-50%);
+        max-width: 970px;
+        width: 100%;
+        margin: 0 auto;
     }
 
     .c-mainvisual__btn {
@@ -136,8 +140,6 @@
         display: flex;
         background-color: rgba(0, 0, 0, 0.8);
         padding: 16px 14px 13px;
-        margin: 0 auto;
-        width: 81%;
     }
 
     .c-mainvisual__left {

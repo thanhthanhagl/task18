@@ -2,7 +2,7 @@
 footer
 ------------------------------------------------------------*/
 .c-footer {
-    margin: -7.1% auto 0;
+    margin: 0 auto;
     z-index: 1;
 
     .c-footer__main {
@@ -10,12 +10,9 @@ footer
         position: relative;
     }
 
-    .c-footer__left {
-        max-width: 670px;
-        width: 100%;
-        border-bottom: 525px solid $green;
-        border-right: 670px solid transparent;
-        display: block;
+    .c-footer__img {
+        width: 34.9%;
+        margin-top: -7.1%;
     }
     
     .c-footer__inner {
@@ -67,14 +64,11 @@ footer
         max-width: 580px;
         width: 100%;
         text-align: center;
+        font-feature-settings: "palt" 1;
     }
 
     .c-footer__right {
-        max-width: 670px;
-        width: 100%;
-        border-bottom: 525px solid $blue;
-        border-left: 670px solid transparent;
-        display: block;
+        width: 34.9%;
     }
 
     .c-footer__info {
@@ -84,5 +78,90 @@ footer
     .c-footer__logo {
         max-width: 145px;
         width: 100%;
+    }
+
+    .c-footer__company {
+        font-family: $main-font;
+        color: $black;
+        font-weight: 300;
+        font-size: 1.3rem;
+        letter-spacing: 1px;
+        margin-top: 10px;
+        line-height: 1.8;
+    }
+
+    .c-footer__name {
+        font-size: 1.6rem;
+        letter-spacing: 1.6px;
+    }
+
+    .c-footer__tel {
+        font-family: "YuMincho", sans-serif;
+        font-size: 2.6rem;
+        letter-spacing: 0;
+        line-height: 1;
+        font-weight: 400;
+        color: $black;
+        margin-top: 19px;
+    }
+
+    .c-footer__number {
+        font-size: 3.2rem;
+    }
+
+    .c-footer__fax {
+        font-weight: 400;
+        font-size: 1.6rem;
+        letter-spacing: 1.6px;
+        margin-top: 11px;
+        font-family: "YuMincho",sans-serif;
+        color: $black;        
+    }
+
+    .c-footer__links {
+        display: flex;
+        justify-content: space-between;
+        margin: 10px auto 0;
+        font-family: $main-font;
+        font-size: 1.4rem;
+        color: $black;
+        font-weight: 400;
+        letter-spacing: 1.1px;
+        text-align: center;
+        max-width: 374px;
+        width: 100%;
+    }
+
+    .c-footer__link {
+        position: relative;
+        width: 50%;
+
+        &::after {
+            content: ">";
+            font-family: $main-font;
+            font-size: 2rem;
+            font-weight: 600;
+            position: relative;
+            top: 0;
+            right: -5px;
+            color: $blue;
+        }
+    }
+
+    .c-footer__tnc {
+        width: 29%;
+    }
+
+    .c-footer__privacy {
+        width: 49%;
+    }
+
+    .c-footer__copyright {
+        font-size: 1.2rem;
+        font-weight: 300;
+        margin-top: 33px;
+        letter-spacing: 1.2px;
+        font-family: $main-font;
+        color: $black;        
     }
 }
