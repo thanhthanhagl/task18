@@ -151,6 +151,10 @@
         &.is-click {
             display: inline-block;
         }
+
+        &:hover {
+            display: inline-block;
+        }
     }
 
     .c-header__subitem {

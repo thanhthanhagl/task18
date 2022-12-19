@@ -223,13 +223,14 @@
         position: relative;
         left: 35%;
         top: 20%;
+        animation: scrolldown 5s ease-in-out infinite;
 
         @include sp {
             border-width: 1px;
             border-radius: 50%;
             width: 5px;
             height: 4px;
-            left: 42.5%;
+            left: 40%;
             top: 20.5%;
         }
     }

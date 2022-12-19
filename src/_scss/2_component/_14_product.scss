@@ -1,5 +1,8 @@
 .c-product {
     padding: 50px 0;
+    @include sp {
+        padding: 50px 0 29px;
+    }
 
     .c-product__desc {
         text-align: center;
@@ -52,7 +55,7 @@
         @include sp {
             height: 226px;
             padding: 0;
-            width: 46.5%;
+            width: 47%;
             margin-bottom: 20px;
         }
 
@@ -131,7 +134,7 @@
         z-index: 2;
         @include sp {
             top: 55%;
-            padding: 15px 2px;
+            padding: 15px 2px 11px;
             margin: 0 14px;
         }
     }
@@ -171,8 +174,9 @@
         line-height: 1;
         @include sp {
             font-size: 1.4rem;
-            letter-spacing: 1.8px;
-            margin-top: 15px;
+            letter-spacing: 2.7px;
+            margin-top: 11px;
+            line-height: 1.4;
         }
     }
 }

@@ -19,9 +19,6 @@ body {
 
     &--width1200 {
         max-width: 1200px;
-        @include sp {
-            max-width: 600px;
-        }
     }
 }
 

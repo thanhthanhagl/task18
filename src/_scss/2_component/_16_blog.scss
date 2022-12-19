@@ -5,6 +5,7 @@
         background-repeat: no-repeat;
         background-position: center;
         height: 533px;
+
         @include tab {
             background-image: url("./assets/img/bgpdsp.jpg");
         }
@@ -12,6 +13,10 @@
 
     .c-blog__top {
         padding: 50px 0 0;
+
+        @include sp {
+            padding: 41px 20px 0;
+        }
     }
 
     .c-blog__desc {
@@ -24,14 +29,22 @@
         color: $black;
         font-feature-settings: "palt" 1;
         margin-top: 11px;
+
+        @include sp {
+            letter-spacing: 1.6px;
+            line-height: 1.7;
+        }
     }
 
     .c-blog__list {
         margin: 37px auto;
         display: flex;
         justify-content: space-between;
-        @include tab {
+
+        @include sp {
             padding: 0 60px;
+            margin: 28px auto;
+            max-width: 450px;
         }
     }
 
@@ -40,10 +53,17 @@
         max-width: 270px;
         padding: 0 15px;
         width: 100%;
+        @include sp {
+            max-width: 100%;
+        }
 
         &:nth-child(even) {
             margin: 15px 0;
-        }  
+
+            @include tab {
+                margin: 0;
+            }
+        }
     }
 
     .c-blog__wrap {
@@ -57,6 +77,10 @@
         height: 170px;
         background-color: rgb(204, 204, 204);
         position: relative;
+
+        @include sp {
+            height: 142px;
+        }
     }
 
     .c-blog__label {
@@ -73,14 +97,26 @@
         bottom: 0;
         left: 0;
         z-index: 1;
+
+        @include sp {
+            letter-spacing: 1.7px;
+        }
     }
 
     .c-blog__labelblue {
         padding: 4px;
+
+        @include sp {
+            padding: 4px 10px 0 12px;
+        }
     }
 
     .c-blog__labelred {
         padding: 4px 5px 4px 7px;
+
+        @include sp {
+            padding: 4px 10px 0 12px;
+        }
     }
 
     .c-blog__info {
@@ -89,6 +125,10 @@
         padding: 11px 10px 14px 14px;
         height: 95px;
         position: relative;
+
+        @include tab {
+            height: 80px;
+        }
 
         &::after {
             content: ">";
@@ -110,6 +150,12 @@
         letter-spacing: 1.5px;
         color: $black;
         font-feature-settings: "palt" 1;
+
+        @include sp {
+            font-size: 1.3rem;
+            letter-spacing: 1.3px;
+            line-height: 2;
+        }
     }
 
     .c-blog__seemore {
@@ -123,25 +169,30 @@
         letter-spacing: 1.4px;
         color: #000;
         font-weight: 600;
+
+        @include sp {
+            font-size: 1.4rem;
+            letter-spacing: 1.4px;
+        }
     }
 
     .c-blog__prev {
         border: none;
         background-color: unset;
-
-        &::before {
-            content: url("./assets/img/prev.svg");
-            width: 36px;
-        }
+        background-image: url("./assets/img/prev.svg");
+        width: 70px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        transform: translateY(40%);
     }
 
     .c-blog__next {
         border: none;
         background-color: unset;
-
-        &::before {
-            content: url("./assets/img/next.svg");
-            width: 36px;
-        }
+        background-image: url("./assets/img/next.svg");
+        width: 70px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        transform: translateY(40%);
     }
 }
