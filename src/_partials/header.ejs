@@ -1,7 +1,12 @@
 <header class="c-header l-container">
   <div class="c-header__main">
     <div class="c-header__logo">
-      <a  href="<%= BASE_URL %>index.html"><img class="c-header__logoimg" src="/assets/img/logo.png" alt="WIST"></a>
+      <a  href="<%= BASE_URL %>index.html">
+        <picture>
+          <source media="(max-width:1023px)" srcset="./assets/img/logosp.png">
+          <img class="c-header__logoimg" src="/assets/img/logo.png" alt="WIST">
+        </picture>        
+      </a>
     </div>
     <nav class="c-header__nav">
       <ul class="c-header__menu">
@@ -14,6 +19,39 @@
                   <% link.links.forEach(child_link => { %>
                     <li class="c-header__subitem">
                       <a <% if (child_link.current) { %>class="is-active"<% } %> href="<%= child_link.url %>"><%= child_link.title %></a>
+                    </li>
+                  <% }) %>
+                </ul>
+              <% } %>
+            </li>
+          <% }) %>
+        <% } %>
+      </ul>      
+    </nav>
+    <div class="c-header__iconmenu u-notpc">
+      <div class="c-header__icon">
+        <span class="c-header__line"></span>
+        <span class="c-header__line"></span>
+        <span class="c-header__line"></span>
+      </div>
+    </div>
+    <nav class="c-header__navmb">
+      <div class="c-header__info">
+        <p class="c-header__desc">〒860-0833　熊本市中央区平成3丁目16番13号</p>
+        <p class="c-header__tel"><span class="c-header__small">tel.</span>096-285-5177</p>
+        <p class="c-header__fax">fax.096-285-5188</p>
+      </div>
+      <ul class="c-header__menumb">
+        <% if (typeof linklists != 'undefined') { %>
+          <% linklists.mobile && linklists.mobile.forEach(link => { %>
+            <li class="c-header__linkmb">
+              <a class="c-header__itemmb<% if (link.current || link.active) { %> <%= is-active %> <% } %>" href="<%= link.url %>"><%= link.title %></a>
+              <% if (link.links) { %>
+                <ul class="c-header__submenumb">
+                  <li class="c-header__back">戻る</li>
+                  <% link.links.forEach(child_link => { %>
+                    <li class="c-header__subitemmb">
+                      <a class="c-header__itemmb<% if (child_link.current) { %><%= is-active%><% } %>" href="<%= child_link.url %>"><%= child_link.title %></a>
                     </li>
                   <% }) %>
                 </ul>

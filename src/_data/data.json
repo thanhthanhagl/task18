@@ -59,33 +59,109 @@
         "title": "お問い合わせ",
         "url": "./contact.html"
       }
+    ],
+    "mobile": [
+      {
+        "title": "お知らせ",
+        "url": "#"
+      },
+      {
+        "title": "会社案内",
+        "url": "#"
+      },
+      {
+        "title": "事業紹介",
+        "url": "#",
+        "links": [
+          {
+            "title": "事業紹介（インデックス）",
+            "url": "#"
+          },
+          {
+            "title": "防災・減災業務",
+            "url": "#"
+          },
+          {
+            "title": "ICT・BIM/CIM",
+            "url": "#"
+          },
+          {
+            "title": "測量・設計業務",
+            "url": "#"
+          },
+          {
+            "title": "調査業務",
+            "url": "#"
+          }
+        ]
+      },
+      {
+        "title": "実績紹介",
+        "url": "#"
+      },
+      {
+        "title": "技術資料",
+        "url": "#"
+      },
+      {
+        "title": "交通アクセス",
+        "url": "#"
+      },
+      {
+        "title": "プライバシーポリシー",
+        "url": "#"
+      },
+      {
+        "class":"u-green",
+        "title": "採用情報",
+        "url": "#",
+        "links": [
+          {
+            "title": "私たちの仕事",
+            "url": "#"
+          },
+          {
+            "title": "先輩社員の声",
+            "url": "#"
+          },
+          {
+            "title": "募集要項",
+            "url": "#"
+          }
+        ]
+      },
+      {
+        "class":"u-blue",
+        "title": "お問い合わせ",
+        "url": "./contact.html"
+      }
     ]
   },
   "product":{
     "list":[
       {
-        "class":"c-item1",
+        "class":"c-red",
         "icon":"./assets/img/tsunami.svg",
         "name":"防災・減災業務",
         "bg":"u-red",
         "iconclass":"c-tsunami"
       },
       {
-        "class":"c-item2",
+        "class":"c-blue",
         "icon":"./assets/img/drone.svg",
         "name":"ICT・BIM/CIM",
         "bg":"u-blue",
         "iconclass":"c-drone"
       },
       {
-        "class":"c-item3",
+        "class":"c-yellow",
         "icon":"./assets/img/camera.svg",
         "name":"測量・設計業務",
         "bg":"u-yellowdark",
         "iconclass":"c-camera"
       },
       {
-        "class":"c-item4",
+        "class":"c-green",
         "icon":"./assets/img/drill.svg",
         "name":"調査業務",
         "bg":"u-green",

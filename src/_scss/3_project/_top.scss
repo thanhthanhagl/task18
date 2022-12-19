@@ -3,4 +3,7 @@ Css of home page
 ------------------------------------------------------------*/
 .p-top {
     margin-top: 80px;
+    @include sp {
+        margin-top: 0;
+    }
 }

@@ -21,35 +21,35 @@
         <div class="c-mainvisual__wrapimg">
           <div class="c-mainvisual__inner">
             <h2 class="c-mainvisual__title">Protect</h2>
-            <p class="c-mainvisual__subtitle">生命と財産を守る</p>
+            <p class="c-mainvisual__subtitle c-mainvisual__subtext">生命と財産を守る</p>
           </div>
         </div>
         <div class="c-mainvisual__wrapimg">
           <div class="c-mainvisual__inner">
             <h2 class="c-mainvisual__title">Connect</h2>
-            <p class="c-mainvisual__subtitle">地域と人を繋ぐ</p>
+            <p class="c-mainvisual__subtitle c-mainvisual__subtext">地域と人を繋ぐ</p>
           </div>
         </div>
         <div class="c-mainvisual__wrapimg">
           <div class="c-mainvisual__inner">
             <h2 class="c-mainvisual__title">Technology</h2>
-            <p class="c-mainvisual__subtitle">最新技術を生かす</p>
+            <p class="c-mainvisual__subtitle c-mainvisual__subtext">最新技術を生かす</p>
           </div>
         </div>
       </div>
       <div class="c-mainvisual__bottom l-container l-container--width1200">
         <div class="c-mainvisual__btn"><i class="c-mainvisual__dot"></i></div>
-      <div class="c-mainvisual__label">
-        <div class="c-mainvisual__left">
-          <div class="c-mainvisual__pag">
-            <i class="c-mainvisual__prev">></i>
-            <i class="c-mainvisual__next">></i>
+        <div class="c-mainvisual__label">
+          <div class="c-mainvisual__left">
+            <div class="c-mainvisual__pag">
+              <i class="c-mainvisual__prev">></i>
+              <i class="c-mainvisual__next">></i>
+            </div>
+            <p class="c-mainvisual__date">2018年11月22日</p>
           </div>
-          <p class="c-mainvisual__date">2018年11月22日</p>
+          <p class="c-mainvisual__center">先進建設・防災・減災技術フェアin熊本にドローン等について出展しました。</p>
+          <p class="c-mainvisual__right">お知らせ一覧 <span class="c-mainvisual__arrow">></span></p>
         </div>
-        <p class="c-mainvisual__center">先進建設・防災・減災技術フェアin熊本にドローン等について出展しました。</p>
-        <p class="c-mainvisual__right">お知らせ一覧 ></p>
-      </div>
       </div>
     </section>
     <section class="c-product">
@@ -57,8 +57,8 @@
         <div class="c-top">
           <img src="./assets/img/icon.svg" alt="事業紹介" class="c-icon">
           <h2 class="c-title">事業紹介</h2>
-          <p class="c-product__desc"><span class="u-mgl05">アイエステーは、たゆまない技術向上により、地域防災事業に携わるとともに</span><br>
-            地域の安全・安心を確保できるインフラ整備に貢献します。</p>
+          <p class="c-product__desc"><span class="u-mgl05">アイエステーは、たゆまない技術向上により、地域防災事業に携わるとともに</span><br
+              class="u-pc">地域の安全・安心を確保できるインフラ整備に貢献します。</p>
         </div>
         <div class="c-product__list">
           <% if (typeof product !='undefined' ) { %>
@@ -66,7 +66,7 @@
               <a href="#" class="c-product__item <%= item.class %>">
                 <div class="c-product__label <%= item.bg %>">
                   <div class="c-product__icon">
-                    <img class="<%= item.iconclass %>" src="<%= item.icon %>" alt="<%= item.name %>">
+                    <img class="c-product__iconsvg <%= item.iconclass %>" src="<%= item.icon %>" alt="<%= item.name %>">
                   </div>
                   <h3 class="c-product__name">
                     <%= item.name %>
@@ -111,7 +111,7 @@
             <p class="c-blog__desc">『地域の人たちが安全に安心して暮らせるように、<br>
               そして豊かに快適に暮らせるように』、そんな想いを込めて仕事をしています。</p>
           </div>
-          <div class="c-blog__list">            
+          <div class="c-blog__list">
             <% if (typeof blog !='un=defined' ) { blog && blog.forEach(blog=> { %>
               <a class="c-blog__item" href="<%= blog.link %>">
                 <div class="c-blog__wrap">
@@ -161,22 +161,24 @@
             <h2 class="c-title">お知らせ</h2>
           </div>
           <div class="c-qna__list">
-            <% if (typeof qna != 'undefined') {
-              qna && qna.forEach(item => { %>
-                <a class="c-qna__linkitem" href="#">
-                  <dl class="c-qna__item">
-                    <dt class="c-qna__date"><%= item.dt %></dt>
-                    <dd class="c-qna__event"><%= item.dd %></dd>
-                  </dl>
-                </a>
-              <% })
-            } %>
+            <% if (typeof qna !='undefined' ) { qna && qna.forEach(item=> { %>
+              <a class="c-qna__linkitem" href="#">
+                <dl class="c-qna__item">
+                  <dt class="c-qna__date">
+                    <%= item.dt %>
+                  </dt>
+                  <dd class="c-qna__event">
+                    <%= item.dd %>
+                  </dd>
+                </dl>
+              </a>
+              <% }) } %>
           </div>
         </div>
       </div>
       <div class="c-qna__seemore">
         <a class="c-qna__link" href="#">お知らせ一覧 ></a>
       </div>
-    </section>    
+    </section>
   </main>
   <!-- @@content -->

@@ -79,20 +79,6 @@ form
         height: max-content;
     }
 
-    .c-form__error {
-        display: none;
-        color: #f00;
-        font-size: 1.2rem;
-        margin-top: 6px;
-        font-weight: 300;
-        font-family: $main-font;
-        line-height: 1.1;
-
-        &.is-error {
-            display: block;
-        }
-    }
-
     .c-form__rowtop {
         display: flex;
     }

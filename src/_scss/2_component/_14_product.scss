@@ -11,6 +11,12 @@
         line-height: 2;
         margin-top: 12px;
         font-feature-settings: "palt" 1;
+        @include sp {
+            line-height: 1.8;
+            letter-spacing: 1.3px;
+            padding: 0 15px;
+            margin-top: 10px;
+        }
     }
 
     .c-product__list {
@@ -19,8 +25,13 @@
         padding: 0 15px;
         flex-wrap: wrap;
         margin: 37px auto 0;
-        @include tab{
+        @include tab {
             max-width: 600px;
+        }
+        @include sp {
+            max-width: 335px;
+            padding: 0;
+            margin: 15px auto 0;
         }
     }
 
@@ -34,9 +45,15 @@
         position: relative;
         background-color: rgb(255, 255, 255);
         box-shadow: 0 2px 7px 0 rgba(0, 0, 0, 0.3);
-        @include tab{
+        @include tab {
             width: 43%;
             margin-bottom: 30px;
+        }
+        @include sp {
+            height: 226px;
+            padding: 0;
+            width: 46.5%;
+            margin-bottom: 20px;
         }
 
         &:hover {
@@ -59,6 +76,10 @@
             position: absolute;
             bottom: 0;
             left: 0;
+            @include sp {
+                border-bottom: 226px solid rgba(255, 255, 255, 0.7);
+                border-right: 160px solid transparent;
+            }
         }
 
         &::before {
@@ -69,6 +90,10 @@
             position: absolute;
             top: 0;
             right: 0;
+            @include sp {
+                border-top: 110px solid rgba(255, 255, 255, 0.7);
+                border-left: 78px solid transparent;
+            }
         }
 
         &:nth-child(2n) {
@@ -77,6 +102,10 @@
                 left: unset;
                 right: 0;
                 border-left: 270px solid transparent;
+                @include sp {
+                    border-bottom: 226px solid rgba(255, 255, 255, 0.7);
+                    border-left: 160px solid transparent;
+                }
             }
 
             &::before {
@@ -84,6 +113,10 @@
                 right: unset;
                 left: 0;
                 border-right: 128px solid transparent;
+                @include sp {
+                    border-right: 78px solid transparent;
+                    border-top: 110px solid rgba(255, 255, 255, 0.7);
+                }
             }
         }
     }
@@ -96,6 +129,35 @@
         text-align: center;
         padding: 20px 10px;
         z-index: 2;
+        @include sp {
+            top: 55%;
+            padding: 15px 2px;
+            margin: 0 14px;
+        }
+    }
+
+    .c-tsunami {
+        @include sp {
+            width: 26%;
+        }
+    }
+
+    .c-drone {
+        @include sp {
+            width: 58.5%;
+        }
+    }
+
+    .c-camera {
+        @include sp {
+            width: 16.5%;
+        }
+    }
+
+    .c-drill {
+        @include sp {
+            width: 23%;
+        }
     }
 
     .c-product__name {
@@ -107,5 +169,10 @@
         font-feature-settings: "palt" 1;
         margin-top: 18px;
         line-height: 1;
+        @include sp {
+            font-size: 1.4rem;
+            letter-spacing: 1.8px;
+            margin-top: 15px;
+        }
     }
 }

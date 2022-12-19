@@ -5,6 +5,10 @@ body {
     font-size: 1.4rem;
     min-width: 320px;
     line-height: 1.5;
+
+    &.is-fixed {
+        overflow: hidden;
+    }
 }
 //-------------------------------------------------------
 
@@ -15,6 +19,9 @@ body {
 
     &--width1200 {
         max-width: 1200px;
+        @include sp {
+            max-width: 600px;
+        }
     }
 }
 

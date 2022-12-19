@@ -5,6 +5,9 @@
         background-repeat: no-repeat;
         background-position: center;
         height: 533px;
+        @include tab {
+            background-image: url("./assets/img/bgpdsp.jpg");
+        }
     }
 
     .c-blog__top {
@@ -120,5 +123,25 @@
         letter-spacing: 1.4px;
         color: #000;
         font-weight: 600;
+    }
+
+    .c-blog__prev {
+        border: none;
+        background-color: unset;
+
+        &::before {
+            content: url("./assets/img/prev.svg");
+            width: 36px;
+        }
+    }
+
+    .c-blog__next {
+        border: none;
+        background-color: unset;
+
+        &::before {
+            content: url("./assets/img/next.svg");
+            width: 36px;
+        }
     }
 }

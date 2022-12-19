@@ -8,4 +8,8 @@ icon
     width: 40px;
     position: relative;
     left: 48.4%;
+    @include sp {
+        left: 45.4%;
+        width: 35px;
+    }
 }
