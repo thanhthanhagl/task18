@@ -18,8 +18,9 @@ form
         width: 100%;
         margin-top: 50px;
     }
-    .c-form__tr{
-        @include sp{
+
+    .c-form__tr {
+        @include sp {
             display: flex;
             flex-direction: column;
         }
@@ -29,7 +30,7 @@ form
         width: 152px;
         padding: 16px 0;
         vertical-align: top;
-        @include sp{
+        @include sp {
             width: 100%;
         }
     }
@@ -37,7 +38,7 @@ form
     .c-form__td {
         vertical-align: top;
         padding: 16px 0 17px 10px;
-        @include sp{
+        @include sp {
             width: 100%;
             padding: 16px 0;
         }

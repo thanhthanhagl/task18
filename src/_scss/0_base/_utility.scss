@@ -25,8 +25,9 @@
         display: none;
     }
 }
-.u-notsp{
-    @include sp{
+
+.u-notsp {
+    @include sp {
         display: none;
     }
 }
