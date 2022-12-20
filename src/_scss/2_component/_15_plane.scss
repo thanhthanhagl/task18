@@ -22,10 +22,12 @@
         top: -9.5%;
         left: 2.2%;
         z-index: 2;
+        max-width: 1065px;
         @include sp {
-            width: 91.5%;
-            padding-top: 6.4%;
-            left: 2%;
+            width: 343px;
+            padding-top: 24px;
+            left: 48%;
+            transform: translateX(-50%);
             position: relative;
         }
     }
@@ -36,6 +38,9 @@
         display: flex;
         margin: 0 auto;
         justify-content: flex-end;
+        @include sp {
+            padding: 0 15px;
+        }
     }
 
     .c-plane__line {
@@ -83,7 +88,9 @@
         @include sp {
             flex-basis: 100%;
             z-index: 1;
-            padding: 10px 20px 0;
+            padding: 10px 3px 0 5px;
+            max-width: 600px;
+            margin: 0 auto;
         }
     }
 
@@ -98,7 +105,7 @@
         @include sp {
             font-size: 1.6rem;
             line-height: 1.5;
-            letter-spacing: 1.7px;
+            letter-spacing: 1.4px;
         }
     }
 
@@ -122,8 +129,8 @@
         @include sp {
             font-size: 1.2rem;
             line-height: 1.7;
-            letter-spacing: 1.3px;
-            margin-top: 21px;
+            letter-spacing: 1px;
+            margin-top: 22px;
         }
     }
 
@@ -138,7 +145,7 @@
         line-height: 2.3;
         @include sp {
             font-size: 1.2rem;
-            letter-spacing: 1.2px;
+            letter-spacing: 0.9px;
             line-height: 1.7;
             margin-top: 10px;
         }
@@ -160,7 +167,7 @@
         color: #000;
         @include sp {
             font-size: 1.4rem;
-            letter-spacing: 1px;
+            letter-spacing: 1.4px;
         }
     }
 }

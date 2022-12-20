@@ -11,40 +11,90 @@ footer
     }
 
     .c-footer__img {
-        width: 34.9%;
-        margin-top: -7.1%;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 136%;
+        bottom: 0;
+        position: absolute;
+        margin-top: 7.1%;
+        z-index: 0;
+        @include tab {
+            margin-top: 0;
+        }
     }
-    
+
+    .c-footer__imgright {
+        background-image: url("./assets/img/footer-right.png");
+        text-indent: -9999px;
+        right: 0;
+    }
+
+    .c-footer__imgleft {
+        text-indent: -9999px;
+        background-image: url("./assets/img/footer-left.png");
+        left: 0;
+    }
+
     .c-footer__inner {
         position: absolute;
         left: 4.1%;
-        bottom: 7%;
+        bottom: 9.2%;
         z-index: 2;
-    } 
+
+        @include tab {
+            position: relative;
+            left: -0.5%;
+            top: 9.6%;
+            bottom: unset;
+            text-shadow: 0 1px #eee;
+        }
+    }
 
     .c-footer__title {
         text-align: center;
-        font-family: "Lora",sans-serif;
+        font-family: "Lora", sans-serif;
         font-weight: 400;
         letter-spacing: 0;
         color: $white;
+
+        @include tab {
+            color: $green;
+        }
     }
 
-    .c-footer__protect {        
+    .c-footer__protect {
         font-size: 5rem;
         line-height: 0.9;
+
+        @include tab {
+            font-size: 3rem;
+        }
     }
 
     .c-footer__the {
         font-size: 2rem;
         line-height: 2.3;
         margin-left: -3px;
+
+        @include tab {
+            font-size: 1.2rem;
+            margin-left: 0;
+            display: inline-block;
+            transform: translateY(-4px);
+        }
     }
 
     .c-footer__future {
         font-size: 5rem;
         line-height: 0.7;
         margin-left: -6px;
+
+        @include tab {
+            font-size: 3rem;
+            display: inline-block;
+            transform: translateY(-4px);
+        }
     }
 
     .c-footer__slogan {
@@ -58,13 +108,23 @@ footer
         font-feature-settings: "palt" 1;
         margin-left: 2px;
         transform: translateY(-7px);
+
+        @include tab {
+            color: $green;
+            font-size: 1.2rem;
+            margin-left: 5px;
+            transform: translateY(-11px);
+            letter-spacing: 2.3px;
+        }
     }
 
-    .c-footer__center {  
+    .c-footer__center {
         max-width: 580px;
         width: 100%;
         text-align: center;
         font-feature-settings: "palt" 1;
+        margin: 0 auto;
+        z-index: 1;
     }
 
     .c-footer__right {
@@ -72,12 +132,17 @@ footer
     }
 
     .c-footer__info {
-        margin: 33.5% auto 5%;
+        padding: 10%;
     }
 
     .c-footer__logo {
         max-width: 145px;
         width: 100%;
+
+        @include tab {
+            max-width: 92px;
+            margin-top: 7px;
+        }
     }
 
     .c-footer__company {
@@ -86,13 +151,42 @@ footer
         font-weight: 300;
         font-size: 1.3rem;
         letter-spacing: 1px;
-        margin-top: 10px;
-        line-height: 1.8;
+        margin-top: 12px;
+        line-height: 1.9;
+        margin-left: 5px;
+
+        @include tab {
+            font-size: 1.2rem;
+            line-height: 1.7;
+            letter-spacing: 1.2px;
+            text-shadow: 0 0 2px rgb(255 255 255);
+            margin-top: 11px;
+            margin-left: -5px;
+        }
     }
 
     .c-footer__name {
         font-size: 1.6rem;
         letter-spacing: 1.6px;
+        line-height: 1.4;
+
+        @include tab {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            letter-spacing: 1px;
+            margin-left: 9px;
+        }
+    }
+
+    .c-footer__address {
+        margin-left: -6px;
+
+        @include tab {
+            font-size: 1.2rem;
+            line-height: 1.7;
+            letter-spacing: 1.2px;
+            margin-left: 6px;
+        }
     }
 
     .c-footer__tel {
@@ -102,11 +196,24 @@ footer
         line-height: 1;
         font-weight: 400;
         color: $black;
-        margin-top: 19px;
+        margin-top: 20px;
+        margin-left: -6px;
+        @include tab {
+            font-size: 1.6rem;
+            text-shadow: 0 0 2px rgb(255 255 255);
+            font-feature-settings: "palt" 1;
+            margin-top: 12px;
+            margin-left: -4px;
+        }
     }
 
     .c-footer__number {
         font-size: 3.2rem;
+        letter-spacing: -0.6px;
+        @include tab {
+            font-size: 1.8rem;
+            letter-spacing: -0.4px;
+        }
     }
 
     .c-footer__fax {
@@ -114,22 +221,35 @@ footer
         font-size: 1.6rem;
         letter-spacing: 1.6px;
         margin-top: 11px;
-        font-family: "YuMincho",sans-serif;
-        color: $black;        
+        font-family: "YuMincho", sans-serif;
+        color: $black;
+        @include tab {
+            text-shadow: 0 0 2px rgb(255 255 255);
+            font-size: 1.2rem;
+            letter-spacing: 1.2px;
+            margin-top: 8px;
+        }
     }
 
     .c-footer__links {
         display: flex;
         justify-content: space-between;
-        margin: 10px auto 0;
+        margin: 8px auto 0;
         font-family: $main-font;
         font-size: 1.4rem;
         color: $black;
         font-weight: 400;
-        letter-spacing: 1.1px;
+        letter-spacing: 1.4px;
         text-align: center;
         max-width: 374px;
         width: 100%;
+        @include tab {
+            text-shadow: 0 0 2px rgb(255 255 255);
+            font-size: 1.1rem;
+            letter-spacing: 1.1px;
+            margin-top: 10px;
+            justify-content: flex-start;
+        }
     }
 
     .c-footer__link {
@@ -143,25 +263,42 @@ footer
             font-weight: 600;
             position: relative;
             top: 0;
-            right: -5px;
+            right: -9px;
             color: $blue;
+            @include tab {
+                font-size: 1.2rem;
+                text-shadow: 0 0 2px rgb(255 255 255);
+                right: -6px;
+            }
         }
     }
 
     .c-footer__tnc {
-        width: 29%;
+        width: 27%;
+        @include tab {
+            width: 47%;
+            margin-right: -14px;
+        }
     }
 
     .c-footer__privacy {
         width: 49%;
+        letter-spacing: 1.5px;
     }
 
     .c-footer__copyright {
         font-size: 1.2rem;
         font-weight: 300;
-        margin-top: 33px;
+        margin-top: 32px;
         letter-spacing: 1.2px;
         font-family: $main-font;
-        color: $black;        
+        color: $black;
+        @include tab {
+            text-shadow: 0 0 2px rgb(255 255 255);
+            font-size: 1rem;
+            letter-spacing: 1.1px;
+            margin-top: 20px;
+            font-feature-settings: "palt" 1;
+        }
     }
 }

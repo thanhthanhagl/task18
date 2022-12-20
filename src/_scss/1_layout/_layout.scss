@@ -19,6 +19,12 @@ body {
 
     &--width1200 {
         max-width: 1200px;
+        @include tab {
+            padding: 0 20px;
+        }
+        @include sp {
+            padding: 0;
+        }
     }
 }
 

@@ -68,9 +68,7 @@
                   <div class="c-product__icon">
                     <img class="c-product__iconsvg <%= item.iconclass %>" src="<%= item.icon %>" alt="<%= item.name %>">
                   </div>
-                  <h3 class="c-product__name">
-                    <%= item.name %>
-                  </h3>
+                  <h3 class="c-product__name"><%= item.name %></h3>
                 </div>
               </a>
               <% }) %>
@@ -111,7 +109,7 @@
           <div class="c-blog__top">
             <img src="./assets/img/icon.svg" alt="実績紹介" class="c-icon">
             <h2 class="c-title">実績紹介</h2>
-            <p class="c-blog__desc">『地域の人たちが安全に安心して暮らせるように、<br>
+            <p class="c-blog__desc">『地域の人たちが安全に安心して暮らせるように、<br class="u-pc">
               そして豊かに快適に暮らせるように』、そんな想いを込めて仕事をしています。</p>
           </div>
           <div class="c-blog__list">
@@ -141,16 +139,28 @@
     <section class="c-cta">
       <div class="c-cta__main">
         <a class="c-cta__left" href="#">
+          <div class="c-cta__wrapimg">
+            <picture>
+              <source media="(max-width:1023px )" srcset="./assets/img/leftsp.jpg">
+              <img src="./assets/img/left.jpg" alt="会社案内" class="c-cta__imgleft">
+            </picture>
+          </div>
           <div class="c-cta__inner">
             <h2 class="c-cta__title">会社案内</h2>
-            <p class="c-cta__desc">これまでの防災技術と新分野のICTなどを拡充し、<br>
+            <p class="c-cta__desc">これまでの防災技術と新分野のICTなどを拡充し、<br class="u-pc">
               地元地域に密着した総合建設コンサルタントを目指します。</p>
           </div>
         </a>
         <a class="c-cta__right" href="#">
+          <div class="c-cta__wrapimg">
+            <picture>
+              <source media="(max-width:1023px )" srcset="./assets/img/rightsp.jpg">
+              <img src="./assets/img/right.jpg" alt="採用情報" class="c-cta__imgleft">
+            </picture>
+          </div>
           <div class="c-cta__inner">
             <h2 class="c-cta__title">採用情報</h2>
-            <p class="c-cta__desc">私たちと共に専門知識や技術を高めながら<br>
+            <p class="c-cta__desc">私たちと共に専門知識や技術を高めながら<br class="u-pc">
               地域の未来を守る人材を募集しています。</p>
           </div>
         </a>

@@ -1,39 +1,55 @@
 .c-cta {
     background-color: rgb(245, 245, 245);
     padding: 50px 0 0;
+    @include sp {
+        padding: 20px 0 0;
+    }
 
     .c-cta__main {
-        height: 325px;
         display: flex;
         justify-content: space-between;
+        @include tab {
+            flex-direction: column;
+        }
     }
 
     .c-cta__left {
-        background-image: url("./assets/img/left.jpg");
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        max-width: 49.9%;
         width: 100%;
         position: relative;
         display: block;
+        @include tab {
+            max-width: 100%;
+            margin-bottom: 5px;
+        }
     }
 
     .c-cta__right {
-        display: block;
-        background-image: url("./assets/img/right.jpg");
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
         max-width: 50%;
         width: 100%;
         position: relative;
+        @include tab {
+            max-width: 100%;
+        }
     }
 
     .c-cta__inner {
         position: absolute;
         top: 29.5%;
         left: 20%;
+        @include laptop {
+            top: 17.5%;
+            left: 15%;
+        }
+        @include tab {
+            top: 30%;
+            left: 20%;
+            padding-left: 20%;
+        }
+        @include sp {
+            top: 5.1%;
+            left: 0;
+            padding: 5.2%;
+        }
     }
 
     .c-cta__title {
@@ -43,6 +59,11 @@
         letter-spacing: 3.5px;
         line-height: 1.2;
         color: $white;
+        @include sp {
+            font-size: 1.6rem;
+            line-height: 1.2;
+            letter-spacing: 1.6px;
+        }
     }
 
     .c-cta__desc {
@@ -55,6 +76,12 @@
         padding-bottom: 29px;
         margin-top: 13px;
         font-feature-settings: "palt" 1;
+        @include sp {
+            font-size: 1.2rem;
+            line-height: 1.7;
+            letter-spacing: 1.4px;
+            padding-bottom: 20px;
+        }
 
         &::after {
             display: block;
@@ -68,6 +95,10 @@
             position: absolute;
             bottom: 0;
             left: 1px;
+            @include sp {
+                font-size: 1.5rem;
+                line-height: 1.4;
+            }
         }
     }
 }

@@ -35,3 +35,36 @@ video
         background-color: $blue;
     }
 }
+
+.slick-prev {
+    border: none;
+    background-color: unset;
+    background-image: url("./assets/img/prev.svg");
+    width: 70px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    left: 43px;
+    top: 44%;
+    height: 30px;
+    @include sp {
+        left: 20px;
+    }
+}
+
+.slick-next {
+    border: none;
+    background-color: unset;
+    background-image: url("./assets/img/next.svg");
+    width: 70px;
+    height: 30px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 44%;
+    right: -10px;
+
+    @include sp {
+        right: -32px;
+    }
+}

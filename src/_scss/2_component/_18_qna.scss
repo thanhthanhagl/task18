@@ -1,14 +1,29 @@
 .c-qna {
     padding: 50px 0 0;
+    @include sp {
+        padding: 60px 0 0;
+    }
 
     .c-qna__list {
         max-width: 600px;
         width: 100%;
         margin: 0 auto;
+        @include tab {
+            padding: 0 20px;
+        }
+        @include sp {            
+            margin-top: 14px;                   
+        }
     }
 
     .c-qna__linkitem {
         opacity: 1;
+
+        &:nth-child(1) {
+            &>.c-qna__item {
+                border-top: 1px solid rgb(204, 204, 204);
+            }
+        }      
     }
 
     .c-qna__item {
@@ -16,6 +31,10 @@
         padding: 15px 8px 11px;
         border-bottom: 1px solid rgb(204, 204, 204);
         position: relative;
+        @include sp {
+            flex-direction: column;
+            padding: 15px 0 10px;            
+        }
 
         &:hover {
             background-color: #f5f5f5;
@@ -33,6 +52,11 @@
             position: absolute;
             top: 34%;
             right: 1.5%;
+            @include sp {
+                font-size: 1.5rem;
+                letter-spacing: 1.5px;
+                right: -0.5%;
+            }
         }
     }
 
@@ -45,6 +69,12 @@
         color: $blue;
         line-height: 2;
         font-feature-settings: "palt" 1;
+        @include sp {
+            width: 100%;
+            font-size: 1.2rem;
+            letter-spacing: 1.1px;
+            line-height: 1;
+        }
     }
 
     .c-qna__event {
@@ -56,13 +86,25 @@
         letter-spacing: 1px;
         line-height: 2;
         font-feature-settings: "palt" 1;
+        @include sp {
+            width: 90%;
+            font-size: 1.2rem;
+            letter-spacing: 1px;
+            line-height: 1.7;
+            margin-top: 10px;
+        }
     }
-
+      
     .c-qna__seemore {
         text-align: center;
         background-color: rgb(211, 211, 211);
         margin-top: 30px;
         padding: 25px 0;
+        position: relative;
+        @include sp {
+            margin-top: 20px;
+            padding: 16px 0;
+        }
     }
 
     .c-qna__link {
@@ -73,5 +115,10 @@
         color: $black;
         font-feature-settings: "palt" 1;
         margin-left: 9px;
+        @include sp {
+            font-size: 1.4rem;
+            letter-spacing: 1.4px;
+            margin-left: 0;
+        }
     }
 }

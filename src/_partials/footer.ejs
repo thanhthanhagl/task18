@@ -1,6 +1,6 @@
 <footer class="c-footer">
   <div class="c-footer__main l-container">
-    <div class="c-footer__inner">
+    <div class="c-footer__inner u-pc">
       <h2 class="c-footer__title">
         <span class="c-footer__protect">Protect<br></span>
         <span class="c-footer__the">the</span>
@@ -8,18 +8,25 @@
       </h2>
       <p class="c-footer__slogan">防災技術を駆使し、地域の未来を守る。</p>
     </div>
-    <img class="c-footer__img" src="./assets/img/footer-left.png" alt="footer green">
+    <div class="c-footer__img c-footer__imgleft">col-left</div>
     <div class="c-footer__center">
+      <div class="c-footer__inner u-notpc">
+        <h2 class="c-footer__title">
+          <span class="c-footer__protect">Protect<br></span>
+          <span class="c-footer__the">the</span>
+          <span class="c-footer__future">future</span>
+        </h2>
+        <p class="c-footer__slogan">防災技術を駆使し、地域の未来を守る。</p>
+      </div>
       <div class="c-footer__info">
         <a href="./"><img class="c-footer__logo" src="./assets/img/flogo.png" alt="WIST"></a>
         <p class="c-footer__company">
-          総合建設コンサルタント
+          総合建設コンサルタント<br class="u-notpc">
           <span class="c-footer__name u-bold">株式会社アイエステー（IST）<br></span>
-          〒860-0833　熊本市中央区平成3丁目16番13号
+          <span class="c-footer__address">〒860-0833　熊本市中央区平成3丁目16番13号</span>
         </p>
         <p class="c-footer__tel">
-          tel.<span class="c-footer__number u-bold">096-285-5177</span>
-          <a href="tel:0962855177" class="u-notpc">tel.<span class="u-bold">096-285-5177</span></a>
+          tel.<span class="c-footer__number u-bold u-pc">096-285-5177</span><a class="c-footer__number u-bold u-contenttab" href="tel:0962855177">096-285-5177</a>          
         </p>
         <p class="c-footer__fax">fax.096-285-5188</p>
         <div class="c-footer__links">
@@ -29,6 +36,6 @@
         <div class="c-footer__copyright">Copyright © IST CO., LTD. All Rights Reserved.</div>
       </div>      
     </div>
-    <img class="c-footer__img" src="./assets/img/footer-right.png" alt="footer blue">
+    <div class="c-footer__img c-footer__imgright">col-right</div>
   </div>
 </footer>

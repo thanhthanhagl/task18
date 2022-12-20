@@ -18,16 +18,29 @@ form
         width: 100%;
         margin-top: 50px;
     }
+    .c-form__tr{
+        @include sp{
+            display: flex;
+            flex-direction: column;
+        }
+    }
 
     .c-form__th {
         width: 152px;
         padding: 16px 0;
         vertical-align: top;
+        @include sp{
+            width: 100%;
+        }
     }
 
     .c-form__td {
         vertical-align: top;
         padding: 16px 0 17px 10px;
+        @include sp{
+            width: 100%;
+            padding: 16px 0;
+        }
     }
 
     .c-form__label {

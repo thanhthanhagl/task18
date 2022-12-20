@@ -13,8 +13,20 @@
     }
 }
 
+.u-contenttab {
+    display: none;
+    @include tab {
+        display: contents;
+    }
+}
+
 .u-pc {
     @include tab {
+        display: none;
+    }
+}
+.u-notsp{
+    @include sp{
         display: none;
     }
 }
