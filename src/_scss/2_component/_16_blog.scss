@@ -37,6 +37,7 @@
         @include sp {
             letter-spacing: 1.2px;
             line-height: 1.7;
+            margin-top: 7px;
         }
     }
 
@@ -192,13 +193,16 @@
     .c-blog__link {
         font-size: 1.8rem;
         font-family: $main-font;
-        letter-spacing: 1.4px;
+        letter-spacing: 1.8px;
         color: #000;
         font-weight: 600;
+        font-feature-settings: "palt" 1;
+        margin-left: 3px;
 
         @include sp {
             font-size: 1.4rem;
             letter-spacing: 1.4px;
+            margin-left: 0;
         }
     }    
 }

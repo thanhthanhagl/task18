@@ -1,6 +1,8 @@
 .c-plane {
     padding: 50px 0 0;
-    overflow: hidden;
+    @include tab {
+        overflow: hidden;
+    }
 
     @include sp {
         padding: 0;
@@ -24,9 +26,9 @@
         width: 55.5%;
         top: -9.5%;
         left: 2.2%;
-        z-index: 2;
-        max-width: 1065px;   
-        animation: surfing 10s infinite alternate ease-in-out;     
+        z-index: 3;
+        max-width: 1065px;
+        animation: surfing 10s infinite alternate ease-in-out;
 
         @include tab {
             top: 9.5%;
@@ -102,7 +104,7 @@
         @include sp {
             flex-basis: 100%;
             z-index: 1;
-            padding: 10px 3px 0 5px;
+            padding: 11px 3px 0 5px;
             max-width: 600px;
             margin: 0 auto;
         }
@@ -138,7 +140,7 @@
         font-weight: 300;
         font-size: 1.4rem;
         line-height: 2;
-        letter-spacing: 1.2px;
+        letter-spacing: 1.3px;
         color: $white;
         font-feature-settings: "palt" 1;
         margin-top: 20px;
@@ -166,6 +168,7 @@
             letter-spacing: 0.9px;
             line-height: 1.7;
             margin-top: 10px;
+            margin-left: -1px;
         }
     }
 

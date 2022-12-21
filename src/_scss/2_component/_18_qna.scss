@@ -12,7 +12,7 @@
             padding: 0 20px;
         }
         @include sp {            
-            margin-top: 14px;                   
+            margin-top: 11px;                   
         }
     }
 
@@ -28,12 +28,12 @@
 
     .c-qna__item {
         display: flex;
-        padding: 15px 8px 11px;
+        padding: 14px 8px 12px;
         border-bottom: 1px solid rgb(204, 204, 204);
         position: relative;
         @include sp {
             flex-direction: column;
-            padding: 15px 0 10px;            
+            padding: 15px 0 9px;            
         }
 
         &:hover {
@@ -50,7 +50,7 @@
             letter-spacing: 1.8px;
             color: $blue;
             position: absolute;
-            top: 34%;
+            top: 33%;
             right: 1.5%;
             @include sp {
                 font-size: 1.5rem;
@@ -99,7 +99,7 @@
         text-align: center;
         background-color: rgb(211, 211, 211);
         margin-top: 30px;
-        padding: 25px 0;
+        padding: 24px 0;
         position: relative;
         @include sp {
             margin-top: 20px;

@@ -22,6 +22,9 @@
 
         &.is-scroll {
             height: 60px;
+            @include tab {
+                height: 45px;
+            }
         }
 
         @include tab {
@@ -52,7 +55,7 @@
         }
 
         @include tab {
-            height: 23px;
+            height: 23.5px;
         }
     }
 
@@ -187,7 +190,6 @@
         width: 33px;
         position: relative;
         top: 7px;
-        right: 33px;
 
         &.is-open {
             &.c-header__icon .c-header__line {
@@ -282,8 +284,9 @@
             z-index: 11;
             position: fixed;
             width: 100%;
-            height: calc(100vh - 45px);
+            height: calc(100% - 45px);
             overflow-y: scroll;
+            overflow-x: hidden;
             background-color: $white;
 
             &.is-open {
@@ -296,12 +299,17 @@
 
     .c-header__menumb {
         margin-top: 15px;
+        position: relative;
+
+        &.is-show {
+            transform: translateX(-100%);
+        }
     }
 
     .c-header__submenumb {
-        position: fixed;
+        position: absolute;
         left: 100%;
-        top: 165px;
+        top: 1px;
         z-index: 22;
         display: inline-block;
         background-color: $white;

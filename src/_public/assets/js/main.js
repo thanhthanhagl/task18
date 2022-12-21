@@ -101,7 +101,6 @@ $(document).ready(function () {
   $(".c-header__itemmb").click(function () {
     $(".c-header__submenumb").removeClass("is-click");
     var item = $(this).next();
-    console.log(item);
     if (item.length > 0) {
       $(this).next().toggleClass("is-click");
       $(".c-header__navmb").animate({scrollTop: 0},0);

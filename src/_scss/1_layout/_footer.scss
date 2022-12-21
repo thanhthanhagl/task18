@@ -14,17 +14,13 @@ footer
         width: 34.9%;
         background-repeat: no-repeat;
         background-size: 100% 100%;
-        height: 136%;
+        height: 135%;
         bottom: 0;
         position: absolute;
-        margin-top: 7.1%;
         z-index: 0;
         @include tab {
-            margin-top: 0;
             height: 100%;
-        }
-        @include sp {
-            height: 100%;
+            width: 29%;
         }
     }
 
@@ -43,7 +39,7 @@ footer
     .c-footer__inner {
         position: absolute;
         left: 4.1%;
-        bottom: 9.2%;
+        bottom: 9.3%;
         z-index: 2;
         @include laptop {
             left: 2.1%;
@@ -54,6 +50,9 @@ footer
             left: -0.5%;
             top: 9.6%;
             bottom: unset;
+            text-shadow: 0 2px #eee;
+        }
+        @include sp {
             text-shadow: 0 1px #eee;
         }
     }
@@ -86,9 +85,9 @@ footer
 
         @include tab {
             font-size: 1.2rem;
-            margin-left: 0;
-            display: inline-block;
             transform: translateY(-4px);
+            margin-left: 0;
+            display: inline-block;            
         }
     }
 
@@ -100,7 +99,7 @@ footer
         @include tab {
             font-size: 3rem;
             display: inline-block;
-            transform: translateY(-4px);
+            transform: translateY(-4px);        
         }
     }
 
@@ -131,7 +130,6 @@ footer
         text-align: center;
         font-feature-settings: "palt" 1;
         margin: 0 auto;
-        flex: 1;
         z-index: 1;
     }
 
@@ -140,7 +138,10 @@ footer
     }
 
     .c-footer__info {
-        padding: 10%;
+        padding: 60px;
+        @include sp {
+            padding: 37px;
+        }
     }
 
     .c-footer__logo {
@@ -158,10 +159,9 @@ footer
         color: $black;
         font-weight: 300;
         font-size: 1.3rem;
-        letter-spacing: 1px;
-        margin-top: 12px;
-        line-height: 1.9;
-        margin-left: 5px;
+        letter-spacing: 1.3px;
+        margin-top: 9px;
+        line-height: 2;
 
         @include tab {
             font-size: 1.2rem;
@@ -175,8 +175,9 @@ footer
 
     .c-footer__name {
         font-size: 1.6rem;
-        letter-spacing: 1.6px;
         line-height: 1.4;
+        display: inline-block;
+        transform: translateY(2px);
 
         @include tab {
             font-size: 1.2rem;
@@ -187,7 +188,8 @@ footer
     }
 
     .c-footer__address {
-        margin-left: -6px;
+        letter-spacing: 1.1px;
+        display: inline-block;
 
         @include tab {
             font-size: 1.2rem;
@@ -197,6 +199,10 @@ footer
         }
     }
 
+    .c-footer__numadd {
+        letter-spacing: 1px;
+    }
+
     .c-footer__tel {
         font-family: "YuMincho", sans-serif;
         font-size: 2.6rem;
@@ -204,7 +210,7 @@ footer
         line-height: 1;
         font-weight: 400;
         color: $black;
-        margin-top: 20px;
+        margin-top: 19px;
         margin-left: -6px;
         @include tab {
             font-size: 1.6rem;
@@ -228,7 +234,7 @@ footer
         font-weight: 400;
         font-size: 1.6rem;
         letter-spacing: 1.6px;
-        margin-top: 11px;
+        margin-top: 12px;
         font-family: "YuMincho", sans-serif;
         color: $black;
         @include tab {
@@ -242,7 +248,7 @@ footer
     .c-footer__links {
         display: flex;
         justify-content: space-between;
-        margin: 8px auto 0;
+        margin: 7px auto 0;
         font-family: $main-font;
         font-size: 1.4rem;
         color: $black;
@@ -271,7 +277,7 @@ footer
             font-weight: 600;
             position: relative;
             top: 0;
-            right: -9px;
+            right: -10px;
             color: $blue;
             @include tab {
                 font-size: 1.2rem;
@@ -300,16 +306,16 @@ footer
     .c-footer__copyright {
         font-size: 1.2rem;
         font-weight: 300;
-        margin-top: 32px;
-        letter-spacing: 1.2px;
+        margin-top: 33px;
+        letter-spacing: 1.1px;
         font-family: $main-font;
         color: $black;
+        font-feature-settings: "palt" 1;
         @include tab {
             text-shadow: 0 0 2px rgb(255 255 255);
             font-size: 1rem;
             letter-spacing: 1.1px;
             margin-top: 20px;
-            font-feature-settings: "palt" 1;
         }
     }
 }

@@ -42,13 +42,15 @@
         <div class="c-mainvisual__label">
           <div class="c-mainvisual__left">
             <div class="c-mainvisual__pag">
-              <i class="c-mainvisual__prev">></i>
-              <i class="c-mainvisual__next">></i>
+              <a href="#" class="c-mainvisual__prev">></a>
+              <a href="#" class="c-mainvisual__next">></a>
             </div>
-            <p class="c-mainvisual__date">2018年11月22日</p>
+            <a href="#" class="c-mainvisual__blog">
+              <p class="c-mainvisual__date">2018年11月22日</p>
+              <p class="c-mainvisual__center">先進建設・防災・減災技術フェアin熊本にドローン等について出展しました。</p>
+            </a>
           </div>
-          <p class="c-mainvisual__center">先進建設・防災・減災技術フェアin熊本にドローン等について出展しました。</p>
-          <p class="c-mainvisual__right">お知らせ一覧 <span class="c-mainvisual__arrow">></span></p>
+          <a href="#" class="c-mainvisual__right">お知らせ一覧 <span class="c-mainvisual__arrow">></span></a>
         </div>
       </div>
     </section>
@@ -68,7 +70,9 @@
                   <div class="c-product__icon">
                     <img class="c-product__iconsvg <%= item.iconclass %>" src="<%= item.icon %>" alt="<%= item.name %>">
                   </div>
-                  <h3 class="c-product__name"><%= item.name %></h3>
+                  <h3 class="c-product__name">
+                    <%= item.name %>
+                  </h3>
                 </div>
               </a>
               <% }) %>
@@ -78,12 +82,12 @@
     </section>
     <section class="c-plane">
       <div class="c-plane__contain">
-        <div class="l-container l-container--width1920">
+        <div class="l-container">
           <div class="c-plane__wrapimg">
             <picture>
               <source media="(max-width: 767px)" srcset="./assets/img/matriceprosp.png">
               <img class="c-plane__img" src="./assets/img/matricepro.png" alt="レーザースキャナ搭載のドローン*で安全かつ効率的に測量が可能。">
-            </picture>            
+            </picture>
           </div>
           <div class="c-plane__main">
             <i class="c-plane__line"></i>
