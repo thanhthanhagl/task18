@@ -117,26 +117,23 @@ $(document).ready(function () {
   })
   //---------------form validation --------------
   $(".c-form__content").validate({
-    onfocusout: false,
-    onkeyup: false,
-    onclick: false,
     rules: {
       "name": {
         required: true
       },
       "email": {
         required: true,
-        email: true,
+        email: true
       },
       "phone": {
         required: true,
         fnType: true,
         maxlength: 10,
-        digits: true,
+        number: true
       },
       "note": {
         required: true
-      },
+      }
     },
     messages: {
       "name": {
@@ -150,7 +147,7 @@ $(document).ready(function () {
         required: "この項目は必須です。",
         fnType: "00-0000-0000",
         maxlength: "00-0000-0000",
-        digits: "00-0000-0000",
+        digits: "00-0000-0000"
       },
       "note": {
         required: "この項目は必須です。"
@@ -159,7 +156,7 @@ $(document).ready(function () {
   });
   $.validator.addMethod('fnType', function (value) {
     return value.match(/\(?([0-9]{3})\)?([ .-]?)([0-9]{3})\2([0-9]{4})/);
-  }, 'Enter Valid  phone number');
+  }, 'この項目は必須です。');
   $('.c-form__input').blur(function () {
     if ($(this).val().length === 0) {
       $(this).nextAll('.c-form__error').addClass('is-error');
@@ -167,9 +164,5 @@ $(document).ready(function () {
     else {
       $(this).nextAll('.c-form__error').removeClass('is-error');
     }
-  });
-  $(".c-form__btn").click(function () {
-    $('.c-form__error').removeClass('is-error');
-    $(".c-form__input").next('label').show();
   });
 });

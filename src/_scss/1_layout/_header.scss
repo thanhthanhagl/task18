@@ -131,6 +131,7 @@
             background-size: 64px;
             background-repeat: no-repeat;
             transition: 0s;
+            opacity: 1;
 
             &~.c-header__submenu {
                 display: inline-block;
