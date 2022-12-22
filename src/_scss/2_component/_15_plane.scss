@@ -44,7 +44,8 @@
             animation: surfingsp 10s infinite alternate ease-in-out;
         }
     }
-    .c-plane__content{
+
+    .c-plane__content {
         height: 100%;
     }
 
@@ -99,9 +100,9 @@
                 height: 5px;
                 border-radius: 50%;
                 top: 521px;
-                left: 25%;
             }
         }
+
         &::before {
             content: "";
             display: block;

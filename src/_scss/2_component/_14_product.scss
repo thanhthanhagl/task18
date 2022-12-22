@@ -121,18 +121,21 @@
             }
         }
     }
+
     .c-product__red {
         background-image: url("./assets/img/item1.jpg");
-        &>.c-product__label{
+
+        &>.c-product__label {
             background-color: $red;
         }
     }
     
     .c-product__blue {
         background-image: url("./assets/img/item2.jpg");
-        &>.c-product__label{
+
+        &>.c-product__label {
             background-color: $blue;
-            @include sp{
+            @include sp {
                 padding: 15px 2px 8px;
             }
         }        
@@ -140,9 +143,10 @@
     
     .c-product__yellow {
         background-image: url("./assets/img/item3.jpg");
-        &>.c-product__label{
+
+        &>.c-product__label {
             background-color: #a68a2a;
-            @include sp{
+            @include sp {
                 padding: 15px 3px 12px;
             }
         }
@@ -150,9 +154,10 @@
     
     .c-product__green {
         background-image: url("./assets/img/item4.jpg");
-        &>.c-product__label{
+
+        &>.c-product__label {
             background-color: $green;
-            @include sp{
+            @include sp {
                 padding: 16px 0 11px;
             }
         }
@@ -172,37 +177,42 @@
             max-width: 127.5px;
         }
     }
-    .c-product__iconsvg{
+
+    .c-product__iconsvg {
         margin-bottom: 18px;
-        @include sp{
+        @include sp {
             margin-bottom: 14px;
         }
 
     }
-    .c-product__tsunami{
-        @include sp{
+
+    .c-product__tsunami {
+        @include sp {
             width: 25%;
             max-width: 30px;
         }
     }
-    .c-product__drone{
+
+    .c-product__drone {
         margin-bottom: 24px;
-        @include sp{
+        @include sp {
             width: 59.5%;
             margin-bottom: 10px;
             max-width: 71px;
         }
     }
-    .c-product__camera{
+
+    .c-product__camera {
         margin-bottom: 15px;
-        @include sp{
+        @include sp {
             width: 19%;
             margin-bottom: 12px;
             max-width: 22px;
         }
     }
-    .c-product__drill{
-        @include sp{
+
+    .c-product__drill {
+        @include sp {
             width: 22%;
             max-width: 29px;
             margin-bottom: 12px;
