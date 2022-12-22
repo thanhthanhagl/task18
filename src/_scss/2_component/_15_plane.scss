@@ -24,7 +24,8 @@
     .c-plane__wrapimg {
         position: absolute;
         width: 55.5%;
-        top: -9.5%;
+        top: 52%;
+        transform: translateY(-50%);
         left: 2.2%;
         z-index: 3;
         max-width: 1065px;
@@ -57,6 +58,7 @@
 
         @include sp {
             padding: 0 15px;
+            align-items: flex-start;
         }
     }
 
@@ -75,6 +77,7 @@
             position: absolute;
             top: 0;
             left: 49.9%;
+            width: 1px;
             background-color: rgb(255, 0, 0);
         }
 
@@ -94,6 +97,7 @@
                 background-color: rgb(255, 0, 0);
                 width: 5px;
                 height: 5px;
+                border-radius: 50%;
                 top: 521px;
                 left: 25%;
             }
@@ -119,7 +123,7 @@
         @include sp {
             flex-basis: 100%;
             z-index: 1;
-            padding: 11px 3px 0 5px;
+            padding-left: 0;
             max-width: 600px;
             margin: 0 auto;
         }
