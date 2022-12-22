@@ -32,9 +32,8 @@
             max-width: 600px;
         }
         @include sp {
-            max-width: 335px;
-            padding: 0;
             margin: 19px auto 0;
+            max-width: 365px;
         }
     }
 
@@ -47,7 +46,6 @@
         padding: 0 15px;
         position: relative;
         background-color: rgb(255, 255, 255);
-        box-shadow: 0 2px 7px 0 rgba(0, 0, 0, 0.3);
         @include tab {
             width: 43%;
             margin-bottom: 30px;
@@ -81,7 +79,7 @@
             left: 0;
             @include sp {
                 border-bottom: 226px solid rgba(255, 255, 255, 0.7);
-                border-right: 160px solid transparent;
+                border-right: 158px solid transparent;
             }
         }
 
@@ -99,21 +97,21 @@
             }
         }
 
-        &:nth-child(2n) {
+        &:nth-child(even) {
             &::after {
-                border-right: unset;
-                left: unset;
+                border-right: none;
+                left: 0;
                 right: 0;
                 border-left: 270px solid transparent;
                 @include sp {
                     border-bottom: 226px solid rgba(255, 255, 255, 0.7);
-                    border-left: 160px solid transparent;
+                    border-left: 158px solid transparent;
                 }
             }
 
             &::before {
-                border-left: unset;
-                right: unset;
+                border-left: none;
+                right: 100%;
                 left: 0;
                 border-right: 128px solid transparent;
                 @include sp {
@@ -123,7 +121,42 @@
             }
         }
     }
-
+    .c-product__red {
+        background-image: url("./assets/img/item1.jpg");
+        &>.c-product__label{
+            background-color: $red;
+        }
+    }
+    
+    .c-product__blue {
+        background-image: url("./assets/img/item2.jpg");
+        &>.c-product__label{
+            background-color: $blue;
+            @include sp{
+                padding: 15px 2px 8px;
+            }
+        }        
+    }
+    
+    .c-product__yellow {
+        background-image: url("./assets/img/item3.jpg");
+        &>.c-product__label{
+            background-color: #a68a2a;
+            @include sp{
+                padding: 15px 3px 12px;
+            }
+        }
+    }
+    
+    .c-product__green {
+        background-image: url("./assets/img/item4.jpg");
+        &>.c-product__label{
+            background-color: $green;
+            @include sp{
+                padding: 16px 0 11px;
+            }
+        }
+    }
 
     .c-product__label {
         position: relative;
@@ -132,10 +165,47 @@
         padding: 20px 10px;
         z-index: 2;
         @include sp {
-            top: 74.5%;
-            padding: 15px 3px 12px;
-            margin: 0 15px;
+            top: 74%;
+            padding: 15px 0 11px;
+            margin: 0 auto;
             transform: translateY(-50%);
+            max-width: 127.5px;
+        }
+    }
+    .c-product__iconsvg{
+        margin-bottom: 18px;
+        @include sp{
+            margin-bottom: 14px;
+        }
+
+    }
+    .c-product__tsunami{
+        @include sp{
+            width: 25%;
+            max-width: 30px;
+        }
+    }
+    .c-product__drone{
+        margin-bottom: 24px;
+        @include sp{
+            width: 59.5%;
+            margin-bottom: 10px;
+            max-width: 71px;
+        }
+    }
+    .c-product__camera{
+        margin-bottom: 15px;
+        @include sp{
+            width: 19%;
+            margin-bottom: 12px;
+            max-width: 22px;
+        }
+    }
+    .c-product__drill{
+        @include sp{
+            width: 22%;
+            max-width: 29px;
+            margin-bottom: 12px;
         }
     }
 
@@ -146,13 +216,12 @@
         font-weight: 600;
         color: $white;
         font-feature-settings: "palt" 1;
-        margin-top: 18px;
         line-height: 1;
         @include sp {
             font-size: 1.4rem;
-            letter-spacing: 1.9px;
-            margin-top: 12px;
+            letter-spacing: 1.4px;
             line-height: 1.4;
+            font-feature-settings: "palt" 0;
         }
     }
 }

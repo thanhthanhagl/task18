@@ -1,7 +1,7 @@
 .c-qna {
     padding: 50px 0 0;
     @include sp {
-        padding: 60px 0 0;
+        padding: 40px 0 0;
     }
 
     .c-qna__list {
@@ -19,16 +19,18 @@
     .c-qna__linkitem {
         opacity: 1;
 
-        &:nth-child(1) {
-            &>.c-qna__item {
-                border-top: 1px solid rgb(204, 204, 204);
-            }
-        }      
+        @include tab {
+            &:nth-child(1) {
+                &>.c-qna__item {
+                    border-top: 1px solid rgb(204, 204, 204);
+                }
+            } 
+        }     
     }
 
     .c-qna__item {
         display: flex;
-        padding: 14px 8px 12px;
+        padding: 14px 8px 11px;
         border-bottom: 1px solid rgb(204, 204, 204);
         position: relative;
         @include sp {
@@ -83,7 +85,7 @@
         font-family: $main-font;
         font-weight: 300;
         font-size: 1.4rem;
-        letter-spacing: 1px;
+        letter-spacing: 1.1px;
         line-height: 2;
         font-feature-settings: "palt" 1;
         @include sp {

@@ -6,18 +6,30 @@ img
 ------------------------------------------------------------*/
 .c-red {
     background-image: url("./assets/img/item1.jpg");
+    &.c-product__label{
+        background-color: $red;
+    }
 }
 
 .c-blue {
     background-image: url("./assets/img/item2.jpg");
+    &.c-product__label{
+        background-color: $blue;
+    }
 }
 
 .c-yellow {
     background-image: url("./assets/img/item3.jpg");
+    &.c-product__label{
+        background-color: #a68a2a;
+    }
 }
 
 .c-green {
     background-image: url("./assets/img/item4.jpg");
+    &.c-product__label{
+        background-color: $green;
+    }
 }
 
 .c-blog1 {

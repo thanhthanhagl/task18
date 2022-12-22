@@ -7,15 +7,6 @@ form
 .c-form {
     padding: 50px 20px 100px;
 
-    .c-form__iconlogo {
-        left: 46.5%;
-    }
-
-    .c-form__title {
-        letter-spacing: 1.3px;
-        margin-left: 4px;
-    }
-
     .c-form__desc {
         font-size: 1.4rem;
         font-family: $main-font;
@@ -135,10 +126,10 @@ form
         background-image: url("./assets/img/arrow-down.svg");
         background-repeat: no-repeat;
         background-position: 93% 50%;
+        letter-spacing: 1.7px;
     }
 
     .c-form__textarea {
-        resize: vertical;
         height: 168px;
     }
 
@@ -177,4 +168,13 @@ form
             display: block;
         }
     }
+}
+
+.error {
+    color: #f00;
+    font-size: 1.2rem;
+    margin-top: 6px;
+    font-weight: 300;
+    font-family: $main-font;
+    line-height: 1.1;
 }

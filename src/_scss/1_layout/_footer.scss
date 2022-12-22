@@ -39,7 +39,7 @@ footer
     .c-footer__inner {
         position: absolute;
         left: 4.1%;
-        bottom: 9.3%;
+        bottom: 9.5%;
         z-index: 2;
         @include laptop {
             left: 2.1%;
@@ -140,7 +140,7 @@ footer
     .c-footer__info {
         padding: 60px;
         @include sp {
-            padding: 37px;
+            padding: 37px 20px;
         }
     }
 
@@ -160,7 +160,7 @@ footer
         font-weight: 300;
         font-size: 1.3rem;
         letter-spacing: 1.3px;
-        margin-top: 9px;
+        margin-top: 10px;
         line-height: 2;
 
         @include tab {
@@ -184,6 +184,7 @@ footer
             line-height: 1.6;
             letter-spacing: 1px;
             margin-left: 9px;
+            display: block;
         }
     }
 
@@ -193,9 +194,10 @@ footer
 
         @include tab {
             font-size: 1.2rem;
-            line-height: 1.7;
+            line-height: 1.8;
             letter-spacing: 1.2px;
             margin-left: 6px;
+            display: block;
         }
     }
 
@@ -210,13 +212,13 @@ footer
         line-height: 1;
         font-weight: 400;
         color: $black;
-        margin-top: 19px;
+        margin-top: 20px;
         margin-left: -6px;
         @include tab {
             font-size: 1.6rem;
             text-shadow: 0 0 2px rgb(255 255 255);
             font-feature-settings: "palt" 1;
-            margin-top: 12px;
+            margin-top: 13px;
             margin-left: -4px;
         }
     }
@@ -293,20 +295,26 @@ footer
             width: 29%;
         }
         @include tab {
-            width: 47%;
-            margin-right: -14px;
+            width: 50%;
+            text-align: right;
+            right: 42px;
         }
     }
 
     .c-footer__privacy {
         width: 49%;
         letter-spacing: 1.5px;
+        @include tab {
+            width: 50%;
+            text-align: left;
+            left: -12px;
+        }
     }
 
     .c-footer__copyright {
         font-size: 1.2rem;
         font-weight: 300;
-        margin-top: 33px;
+        margin-top: 32px;
         letter-spacing: 1.1px;
         font-family: $main-font;
         color: $black;
@@ -315,7 +323,7 @@ footer
             text-shadow: 0 0 2px rgb(255 255 255);
             font-size: 1rem;
             letter-spacing: 1.1px;
-            margin-top: 20px;
+            margin-top: 19px;
         }
     }
 }

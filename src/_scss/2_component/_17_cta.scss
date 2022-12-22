@@ -2,7 +2,7 @@
     background-color: rgb(245, 245, 245);
     padding: 50px 0 0;
     @include sp {
-        padding: 20px 0 0;
+        padding: 20px 0;
     }
 
     .c-cta__main {
@@ -14,7 +14,7 @@
     }
 
     .c-cta__left {
-        width: 50%;
+        width: 49.9%;
         position: relative;
         display: block;
         @include tab {
@@ -34,8 +34,8 @@
 
     .c-cta__inner {
         position: absolute;
-        top: 29.5%;
-        left: 20.1%;
+        top: 29.4%;
+        left: 20.2%;
         @include laptop {
             top: 17.5%;
             left: 15%;

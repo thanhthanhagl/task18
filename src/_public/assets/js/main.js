@@ -123,17 +123,17 @@ $(document).ready(function () {
       },
       "email": {
         required: true,
-        email: true
+        email: true,
       },
       "phone": {
         required: true,
         fnType: true,
         maxlength: 10,
-        number: true
+        digits: true,
       },
       "note": {
         required: true
-      }
+      },
     },
     messages: {
       "name": {
@@ -147,7 +147,7 @@ $(document).ready(function () {
         required: "この項目は必須です。",
         fnType: "00-0000-0000",
         maxlength: "00-0000-0000",
-        digits: "00-0000-0000"
+        digits: "00-0000-0000",
       },
       "note": {
         required: "この項目は必須です。"
@@ -156,13 +156,19 @@ $(document).ready(function () {
   });
   $.validator.addMethod('fnType', function (value) {
     return value.match(/\(?([0-9]{3})\)?([ .-]?)([0-9]{3})\2([0-9]{4})/);
-  }, 'この項目は必須です。');
+  }, 'Enter Valid  phone number');
   $('.c-form__input').blur(function () {
     if ($(this).val().length === 0) {
       $(this).nextAll('.c-form__error').addClass('is-error');
     }
     else {
       $(this).nextAll('.c-form__error').removeClass('is-error');
+    }
+  });
+  $(".c-form__btn").click(function () {
+    if($(".c-form__content").valid()){
+      alert("ご関心をお寄せいただきありがとうございます。できるだけ早くご連絡いたします。");
+      window.location.reload();
     }
   });
 });

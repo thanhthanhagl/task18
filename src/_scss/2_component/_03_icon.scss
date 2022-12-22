@@ -7,33 +7,11 @@ icon
 .c-icon {
     width: 40px;
     position: relative;
-    left: 48.4%;
+    left: 50%;
+    transform: translateX(-50%);
     @include sp {
-        left: 45.2%;
         width: 34px;
     }
 }
 
-.c-tsunami {
-    @include sp {
-        width: 25%;
-    }
-}
 
-.c-drone {
-    @include sp {
-        width: 59.5%;
-    }
-}
-
-.c-camera {
-    @include sp {
-        width: 18%;
-    }
-}
-
-.c-drill {
-    @include sp {
-        width: 23%;
-    }
-}

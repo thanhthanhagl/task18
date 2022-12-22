@@ -6,6 +6,7 @@
 
   <!-- @content -->
   <main class="p-top">
+    <!-- start mainvisual -->
     <section class="c-mainvisual">
       <div class="c-mainvisual__slider">
         <div class="c-mainvisual__wrapimg">
@@ -50,10 +51,12 @@
               <p class="c-mainvisual__center">先進建設・防災・減災技術フェアin熊本にドローン等について出展しました。</p>
             </a>
           </div>
-          <a href="#" class="c-mainvisual__right">お知らせ一覧 <span class="c-mainvisual__arrow">></span></a>
+          <div class="c-mainvisual__right"><a href="#">お知らせ一覧 <span class="c-mainvisual__arrow">></span></a></div>
         </div>
       </div>
     </section>
+    <!-- end mainvisual -->
+    <!-- start product -->
     <section class="c-product">
       <div class="l-container l-container--width1200">
         <div class="c-top">
@@ -66,7 +69,7 @@
           <% if (typeof product !='undefined' ) { %>
             <% product.list && product.list.forEach(item=> { %>
               <a href="#" class="c-product__item <%= item.class %>">
-                <div class="c-product__label <%= item.bg %>">
+                <div class="c-product__label">
                   <div class="c-product__icon">
                     <img class="c-product__iconsvg <%= item.iconclass %>" src="<%= item.icon %>" alt="<%= item.name %>">
                   </div>
@@ -80,9 +83,11 @@
         </div>
       </div>
     </section>
+    <!-- end product -->
+    <!-- start plane -->
     <section class="c-plane">
       <div class="c-plane__contain">
-        <div class="l-container">
+        <div class="c-plane__content l-container l-container--width1200">
           <div class="c-plane__wrapimg">
             <picture>
               <source media="(max-width: 767px)" srcset="./assets/img/matriceprosp.png">
@@ -107,6 +112,8 @@
         <a class="c-plane__link" href="#"> 詳細情報 ></a>
       </div>
     </section>
+    <!-- end plane -->
+    <!-- start blog -->
     <section class="c-blog">
       <div class="c-blog__bg">
         <div class="l-container l-container--width1200">
@@ -140,6 +147,8 @@
         <a class="c-blog__link" href="#">実績紹介一覧 ></a>
       </div>
     </section>
+    <!-- end blog -->
+    <!-- start cta -->
     <section class="c-cta">
       <div class="c-cta__main">
         <a class="c-cta__left" href="#">
@@ -170,6 +179,8 @@
         </a>
       </div>
     </section>
+    <!-- end cta -->
+    <!-- start qna -->
     <section class="c-qna">
       <div class="c-qna__main">
         <div class="l-container l-container--width1200">
@@ -197,5 +208,6 @@
         <a class="c-qna__link" href="#">お知らせ一覧 ></a>
       </div>
     </section>
+    <!-- end qna -->
   </main>
   <!-- @@content -->
