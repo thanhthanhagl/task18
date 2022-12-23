@@ -53,9 +53,9 @@
         }
 
         @include sp {
-            padding: 0 30px;
+            padding: 0 45px;
             margin: 15px auto;
-            max-width: 315px;
+            max-width: 345px;
         }
     }
 
@@ -175,7 +175,7 @@
         color: $black;
         font-feature-settings: "palt" 1;
 
-        @include sp {
+        @include tab {
             font-size: 1.3rem;
             letter-spacing: 1px;
             line-height: 2;
@@ -185,6 +185,7 @@
     .c-blog__seemore {
         text-align: center;
         padding: 25px 0;
+        display: block;
         @include sp {
             padding: 16px 0;
         }

@@ -30,12 +30,12 @@
 
     .c-qna__item {
         display: flex;
-        padding: 14px 8px 11px;
+        padding: 15px 8px 10px;
         border-bottom: 1px solid rgb(204, 204, 204);
         position: relative;
         @include sp {
             flex-direction: column;
-            padding: 15px 0 9px;            
+            padding: 15px 0 7px;            
         }
 
         &:hover {
@@ -98,10 +98,11 @@
     }
       
     .c-qna__seemore {
+        display: block;
         text-align: center;
         background-color: rgb(211, 211, 211);
         margin-top: 30px;
-        padding: 24px 0;
+        padding: 25px 0;
         position: relative;
         @include sp {
             margin-top: 20px;

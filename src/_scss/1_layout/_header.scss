@@ -356,10 +356,13 @@
 
         &:nth-child(8) {
             background-color: $green;
-            padding: 13px 19px;
+            padding: 0 19px;
 
             &>.c-header__itemmb {
                 color: $white;
+                display: inline-block;
+                padding: 19px 0;
+                width: 93%;
             }
 
             &::before {
@@ -370,10 +373,13 @@
         &:last-child {
             border-bottom: 1px dotted rgb(204, 204, 204);
             background-color: #44b8d1;
-            padding: 13px 19px;
+            padding: 0 19px;
 
             &>.c-header__itemmb {
                 color: $white;
+                display: inline-block;
+                padding: 18px 0;
+                width: 93%;
             }
 
             &::before {

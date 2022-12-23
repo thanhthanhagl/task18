@@ -16,23 +16,23 @@ other
 }
 @keyframes surfing {
     0% {
-        transform: translate(-20px, 0);
+        transform: translate(-75%, -60%);
     }
 
     25% {
-        transform: translate(-10px, 25px);
+        transform: translate(-70%, -58%);
     }
 
     50% {
-        transform: translate(0, 0);
+        transform: translate(-65%, -60%);;
     }
 
     75% {
-        transform: translate(10px, 25px);
+        transform: translate(-60%, -58%);
     }
 
     100% {
-        transform: translate(20px, 0);
+        transform: translate(-55%, -60%);
     }
 }
 @keyframes surfingsp {

@@ -24,21 +24,18 @@
     .c-plane__wrapimg {
         position: absolute;
         width: 55.5%;
-        top: 52%;
-        transform: translateY(-50%);
-        left: 2.2%;
+        top: 242px;
+        transform: translate(-50%, -50%);
+        left: 30%;
         z-index: 3;
         max-width: 1065px;
         animation: surfing 10s infinite alternate ease-in-out;
 
-        @include tab {
-            top: 9.5%;
-        }
-
         @include sp {
             width: 337px;
             padding-top: 24px;
-            left: 47.6%;
+            left: 47.7%;
+            top: 0.2%;
             transform: translateX(-50%);
             position: relative;
             animation: surfingsp 10s infinite alternate ease-in-out;
@@ -58,7 +55,7 @@
         align-items: center;
 
         @include sp {
-            padding: 0 15px;
+            padding: 15px;
             align-items: flex-start;
         }
     }
@@ -124,7 +121,7 @@
         @include sp {
             flex-basis: 100%;
             z-index: 1;
-            padding-left: 0;
+            padding-left: 5px;
             max-width: 600px;
             margin: 0 auto;
         }
@@ -168,8 +165,8 @@
         @include tab {
             font-size: 1.2rem;
             line-height: 1.7;
-            letter-spacing: 1px;
-            margin-top: 22px;
+            letter-spacing: 1.1px;
+            margin-top: 21px;
         }
     }
 
@@ -195,6 +192,7 @@
     .c-plane__seemore {
         padding: 25px 0;
         text-align: center;
+        display: block;
 
         @include sp {
             padding: 21px 0;
